@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./../assets/images/logo/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./../assets/images/logo/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./../assets/images/logo/logo.png"
+    />
+    <link rel="manifest" href="./manifest.json" />
+    <link
+      rel="mask-icon"
+      href="./../assets/images/logo/logo.png"
+      color="#38bdf8"
+    />
+    <link rel="shortcut icon" href="./../assets/images/logo/logo.png" />
+    <!-- favicon -->
+    <title>Muebles</title>
+    <!-- all css are included in style.css file -->
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- main body -->
+    <div class="main">
+      <!-- preloader -->
+      <div id="preloader">
+        <div>
+          <svg
+            width="400"
+            height="248"
+            viewBox="0 0 400 248"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 247.639V205.526H4.01201L23.8481 236.191L43.8033 205.526H47.8153V247.639H43.1456L44.2637 212.204L25.0586 242.285H22.7567L4.66972 212.204V247.639H0Z"
+              fill="#222329"
+              class="svg-elem-1"
+            ></path>
+            <path
+              d="M94.5176 248C88.6421 248 84.0163 246.456 80.64 243.368C77.2638 240.279 75.5757 235.707 75.5757 229.651V205.526H80.4427V229.47C80.4427 234.444 81.6704 238.114 84.1259 240.48C86.5813 242.846 90.0452 244.029 94.5176 244.029C99.0339 244.029 102.52 242.846 104.975 240.48C107.431 238.114 108.658 234.444 108.658 229.47V205.526H113.394V229.651C113.394 235.707 111.706 240.279 108.329 243.368C104.997 246.456 100.393 248 94.5176 248Z"
+              fill="#222329"
+              class="svg-elem-2"
+            ></path>
+            <path
+              d="M146.081 224.357H169.89V228.147H146.081V224.357ZM146.081 243.789H173.771V247.639H141.214V205.526H172.784V209.376H146.081V243.789Z"
+              fill="#222329"
+              class="svg-elem-3"
+            ></path>
+            <path
+              d="M198.365 247.639V205.526H218.228C223.358 205.526 227.327 206.469 230.133 208.354C232.983 210.239 234.408 212.906 234.408 216.355C234.408 218.641 233.816 220.566 232.632 222.131C231.492 223.695 229.914 224.878 227.897 225.68C225.923 226.482 224.871 226.703 222.503 226.703C222.503 226.703 227.962 225.861 230.067 226.703C232.215 227.505 233.882 228.728 235.066 230.373C236.249 231.977 236.841 233.982 236.841 236.389C236.841 239.958 235.394 242.726 232.5 244.691C229.65 246.656 225.331 247.639 219.544 247.639H198.365ZM203.233 243.969H219.478C223.512 243.969 226.603 243.348 228.752 242.104C230.9 240.821 231.974 238.795 231.974 236.028C231.974 233.301 230.9 231.315 228.752 230.072C226.603 228.788 223.512 228.147 219.478 228.147H203.233V224.477H217.899C221.583 224.477 224.433 223.835 226.45 222.552C228.51 221.268 229.541 219.363 229.541 216.836C229.541 214.27 228.51 212.364 226.45 211.121C224.433 209.838 221.583 209.196 217.899 209.196H203.233V243.969Z"
+              fill="#222329"
+              class="svg-elem-4"
+            ></path>
+            <path
+              d="M261.105 247.639V205.526H265.972V243.789H291.754V247.639H261.105Z"
+              fill="#222329"
+              class="svg-elem-5"
+            ></path>
+            <path
+              d="M317.856 224.357H341.665V228.147H317.856V224.357ZM317.856 243.789H345.545V247.639H312.989V205.526H344.559V209.376H317.856V243.789Z"
+              fill="#222329"
+              class="svg-elem-6"
+            ></path>
+            <path
+              d="M382.834 248C379.414 248 376.125 247.499 372.968 246.496C369.855 245.453 367.443 244.13 365.733 242.525L367.641 239.096C369.263 240.54 371.434 241.763 374.152 242.766C376.914 243.729 379.808 244.21 382.834 244.21C385.728 244.21 388.074 243.889 389.871 243.247C391.713 242.565 393.05 241.663 393.883 240.54C394.76 239.417 395.199 238.174 395.199 236.81C395.199 235.166 394.673 233.842 393.62 232.839C392.612 231.837 391.274 231.055 389.608 230.493C387.942 229.891 386.1 229.37 384.083 228.929C382.067 228.488 380.05 228.026 378.033 227.545C376.016 227.024 374.152 226.342 372.442 225.5C370.776 224.657 369.417 223.554 368.364 222.191C367.356 220.787 366.852 218.962 366.852 216.716C366.852 214.631 367.444 212.725 368.627 211.001C369.855 209.236 371.719 207.832 374.218 206.789C376.717 205.707 379.918 205.165 383.82 205.165C386.407 205.165 388.972 205.506 391.516 206.188C394.059 206.83 396.251 207.732 398.093 208.895L396.448 212.445C394.475 211.241 392.371 210.359 390.134 209.798C387.942 209.236 385.815 208.955 383.755 208.955C380.992 208.955 378.712 209.296 376.914 209.978C375.117 210.66 373.779 211.582 372.902 212.745C372.069 213.868 371.653 215.152 371.653 216.596C371.653 218.24 372.157 219.564 373.166 220.566C374.218 221.569 375.577 222.351 377.243 222.913C378.953 223.474 380.817 223.976 382.834 224.417C384.851 224.858 386.846 225.339 388.819 225.861C390.836 226.382 392.678 227.064 394.344 227.906C396.054 228.708 397.413 229.791 398.421 231.155C399.474 232.519 400 234.303 400 236.509C400 238.555 399.386 240.46 398.158 242.225C396.931 243.949 395.045 245.353 392.502 246.436C390.003 247.479 386.78 248 382.834 248Z"
+              fill="#222329"
+              class="svg-elem-7"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M307.823 179.596C307.823 181.925 305.78 183.748 303.307 183.748C300.835 183.748 298.793 181.925 298.793 179.596C298.793 177.267 300.835 175.445 303.307 175.445C305.78 175.445 307.823 177.267 307.823 179.596Z"
+              fill="#E85342"
+              class="svg-elem-8"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M99.3204 205.163C93.4077 210.682 87.7091 199.645 86.9028 194.076C81.5276 154.283 137.108 21.5382 173.498 3.16057C188.549 -4.43351 201.986 2.24928 207.738 16.8805C213.113 30.5499 210.533 72.115 210.533 88.6701C210.533 106.136 208.544 123.907 210.479 141.373C225.046 122.692 242.301 90.5432 257.835 74.6969C281.056 51.0034 299.492 61.8881 304.974 91.0494C308.844 111.553 310.135 150.79 302.556 170.686C292.774 147.347 294.601 98.4411 281.432 82.696C263.586 97.3779 244.234 149.473 225.69 169.471C215.907 180.001 201.986 185.773 189.784 175.192C173.067 160.611 173.39 103.2 174.733 81.5315C175.486 69.786 177.959 51.1553 178.013 36.9291C159.199 56.6231 78.2497 184.305 99.3204 205.163ZM280.625 81.7341C280.517 81.6328 280.411 81.4809 280.303 81.3797L280.195 81.4809C280.41 81.6328 280.517 81.6834 280.625 81.7341Z"
+              fill="#E85342"
+              class="svg-elem-9"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <!-- preloader -->
+      <!-- navbar -->
+      <section id="top_navbar" class="">
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+          <div
+            class="row flex-row align-items-center justify-content-between w-100 mx-auto"
+          >
+            <div class="col-lg-3 col-md-6 col-6 py-lg-3">
+              <a class="navbar-brand me-auto" href="./../index.html">
+                <img src="./../assets/images/logo/logo.png" alt="" />
+              </a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-6 py-lg-3">
+              <div href="#" class="search desktop">
+                <input
+                  class="w-100"
+                  type="search"
+                  name=""
+                  id=""
+                  placeholder="Search by name, tag, category"
+                />
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-end w-100 gap-3"
+              >
+                <div
+                  href="#"
+                  class="search mob_nav navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent1"
+                  aria-controls="navbarSupportedContent1"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <i class="ph-magnifying-glass"></i>
+                </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <div class="hamburger-icon" id="icon">
+                    <div class="icon-1" id="a"></div>
+                    <div class="icon-2" id="b"></div>
+                    <div class="icon-3" id="c"></div>
+                    <div class="clear"></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="desktop py-3">
+                <ul class="navbar-nav justify-content-end w-100">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./widhlist.html">
+                      <i class="ph-heart"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <button
+                      class="nav-link border-0 bg-transparent"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasRight"
+                      aria-controls="offcanvasRight"
+                    >
+                      <i class="ph-handbag"></i>
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./profile.html">
+                      <i class="ph-user"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="mob_nav py-lg-3">
+                <div
+                  class="collapse navbar-collapse py-3 relative"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav justify-content-center w-100">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Living Room
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Bed Room
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Outdoor
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Dinning
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Kitchen
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Office
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Lights & Lamps
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mob_nav py-lg-3">
+                <div
+                  class="collapse navbar-collapse py-3 relative"
+                  id="navbarSupportedContent1"
+                >
+                  <div href="#" class="search">
+                    <input class="w-100" type="search" placeholder="Search" />
+                  </div>
+                </div>
+              </div>
+              <div class="desktop">
+                <div
+                  class="collapse navbar-collapse py-3 relative"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav justify-content-center w-100">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Living Room
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Bed Room
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Outdoor
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Dinning
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Kitchen
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Office
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop-all-product.html">
+                        Lights & Lamps
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- navbar -->
+
+      <!-- profile -->
+      <div class="profile">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="profile_nav">
+                <img
+                  class="img-fluid"
+                  src="./../assets/images/profile/profile.png"
+                  alt=""
+                />
+                <h4 class="user_name">{{User Name}}</h4>
+                <p class="user_email">example@email.com</p>
+                <ul class="profile_navbar">
+                  <li class="profile_navbar_item">
+                    <a href="./profile.html" class="profile_navbar_link">
+                      <i class="ph-user"></i>
+                      Profile</a
+                    >
+                  </li>
+                  <li class="profile_navbar_item">
+                    <a
+                      href="./billing-address.html"
+                      class="profile_navbar_link"
+                    >
+                      <i class="ph-map-pin"></i>
+                      Billing Address</a
+                    >
+                  </li>
+                  <li class="profile_navbar_item">
+                    <a href="./payment.html" class="profile_navbar_link active">
+                      <i class="ph-cardholder"></i>
+                      Payment Options</a
+                    >
+                  </li>
+                  <li class="profile_navbar_item">
+                    <a href="./track-my-order.html" class="profile_navbar_link">
+                      <span>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.5 6.375H4.5C4.15482 6.375 3.875 6.65482 3.875 7V8.875C3.875 9.22018 4.15482 9.5 4.5 9.5H19.5C19.8452 9.5 20.125 9.22018 20.125 8.875V7C20.125 6.65482 19.8452 6.375 19.5 6.375Z"
+                            stroke="#016A78"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M18.875 9.5V17C18.875 17.1658 18.8092 17.3247 18.6919 17.4419C18.5747 17.5592 18.4158 17.625 18.25 17.625H5.75C5.58424 17.625 5.42527 17.5592 5.30806 17.4419C5.19085 17.3247 5.125 17.1658 5.125 17V9.5"
+                            stroke="#016A78"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10.125 12.625H13.875"
+                            stroke="#016A78"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      Track My Order</a
+                    >
+                  </li>
+                  <li class="profile_navbar_item">
+                    <a href="./order.html" class="profile_navbar_link">
+                      <span>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.5 6.375H4.5C4.15482 6.375 3.875 6.65482 3.875 7V8.875C3.875 9.22018 4.15482 9.5 4.5 9.5H19.5C19.8452 9.5 20.125 9.22018 20.125 8.875V7C20.125 6.65482 19.8452 6.375 19.5 6.375Z"
+                            stroke="#016A78"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M18.875 9.5V17C18.875 17.1658 18.8092 17.3247 18.6919 17.4419C18.5747 17.5592 18.4158 17.625 18.25 17.625H5.75C5.58424 17.625 5.42527 17.5592 5.30806 17.4419C5.19085 17.3247 5.125 17.1658 5.125 17V9.5"
+                            stroke="#016A78"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10.125 12.625H13.875"
+                            stroke="#016A78"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      Order</a
+                    >
+                  </li>
+                  <li class="profile_navbar_item">
+                    <a href="./widhlist.html" class="profile_navbar_link">
+                      <i class="ph-heart"></i>
+                      My Wishlist</a
+                    >
+                  </li>
+                  <li class="profile_navbar_item">
+                    <a href="./review.html" class="profile_navbar_link">
+                      <i class="ph-pencil-simple"></i>
+                      Reviews</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9 signup">
+              <div class="profile_body">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Account</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Payment Options
+                    </li>
+                  </ol>
+                </nav>
+
+                <h4>Payment Options</h4>
+                <p>Add or view current payment options</p>
+
+                <div
+                  class="checkout_process_modal view_cart_modal payment_option"
+                >
+                  <!-- billing address -->
+                  <div class="shipping_address cart-item d-block card-method">
+                    <div class="shipping_address_item">
+                      <div class="cart-item-add-more">
+                        <a href="#" class="add-new-method">
+                          <span>
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1 10L19 10"
+                                stroke="#016A78"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M10 1L9.99931 19"
+                                stroke="#016A78"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          Add New method
+                        </a>
+                      </div>
+                      <div class="payment_method_card">
+                        <div class="payment_method_card_item">
+                          <div class="address_name position-relative">
+                            <div>
+                              <img
+                                src="./../assets/images/payment/mastercard.png"
+                                alt=""
+                              />
+                              <span class="default">Default</span>
+                            </div>
+                            <span class="dropbtn">
+                              <svg
+                                width="36"
+                                height="36"
+                                viewBox="0 0 36 36"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M19.6668 18C19.6668 18.9205 18.9206 19.6667 18.0002 19.6667C17.0797 19.6667 16.3335 18.9205 16.3335 18C16.3335 17.0795 17.0797 16.3333 18.0002 16.3333C18.9206 16.3333 19.6668 17.0795 19.6668 18Z"
+                                  fill="#637381"
+                                />
+                                <path
+                                  d="M19.6668 12.1667C19.6668 13.0871 18.9206 13.8333 18.0002 13.8333C17.0797 13.8333 16.3335 13.0871 16.3335 12.1667C16.3335 11.2462 17.0797 10.5 18.0002 10.5C18.9206 10.5 19.6668 11.2462 19.6668 12.1667Z"
+                                  fill="#637381"
+                                />
+                                <path
+                                  d="M19.6668 23.8333C19.6668 24.7538 18.9206 25.5 18.0002 25.5C17.0797 25.5 16.3335 24.7538 16.3335 23.8333C16.3335 22.9129 17.0797 22.1667 18.0002 22.1667C18.9206 22.1667 19.6668 22.9129 19.6668 23.8333Z"
+                                  fill="#637381"
+                                />
+                              </svg>
+                              <div
+                                id="myDropdown"
+                                class="dropdown-content position-absolute"
+                              >
+                                <a href="#" class="edit">Edit</a>
+                                <a href="#" class="cancel">Delete</a>
+                              </div>
+                            </span>
+                          </div>
+                          <p>**** **** **** 5678</p>
+                        </div>
+                        <div class="payment_method_card_item">
+                          <div class="address_name position-relative">
+                            <div>
+                              <img
+                                src="./../assets/images/payment/visa.png"
+                                alt=""
+                              />
+                            </div>
+                            <span class="dropbtn">
+                              <svg
+                                width="36"
+                                height="36"
+                                viewBox="0 0 36 36"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M19.6668 18C19.6668 18.9205 18.9206 19.6667 18.0002 19.6667C17.0797 19.6667 16.3335 18.9205 16.3335 18C16.3335 17.0795 17.0797 16.3333 18.0002 16.3333C18.9206 16.3333 19.6668 17.0795 19.6668 18Z"
+                                  fill="#637381"
+                                />
+                                <path
+                                  d="M19.6668 12.1667C19.6668 13.0871 18.9206 13.8333 18.0002 13.8333C17.0797 13.8333 16.3335 13.0871 16.3335 12.1667C16.3335 11.2462 17.0797 10.5 18.0002 10.5C18.9206 10.5 19.6668 11.2462 19.6668 12.1667Z"
+                                  fill="#637381"
+                                />
+                                <path
+                                  d="M19.6668 23.8333C19.6668 24.7538 18.9206 25.5 18.0002 25.5C17.0797 25.5 16.3335 24.7538 16.3335 23.8333C16.3335 22.9129 17.0797 22.1667 18.0002 22.1667C18.9206 22.1667 19.6668 22.9129 19.6668 23.8333Z"
+                                  fill="#637381"
+                                />
+                              </svg>
+                              <div
+                                id="myDropdown"
+                                class="dropdown-content position-absolute"
+                              >
+                                <a href="#" class="edit">Edit</a>
+                                <a href="#" class="cancel">Delete</a>
+                              </div>
+                            </span>
+                          </div>
+                          <p>**** **** **** 1234</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- billing address edit-->
+                  <div
+                    class="shipping_address cart-item payment-address d-none"
+                  >
+                    <div class="shipping_address_item">
+                      <div class="address_name payment">
+                        <div>
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="paypal"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="paypal">
+                            Payment with paypal
+                          </label>
+                        </div>
+                        <span>
+                          <img
+                            src="./../assets/images/payment/paypal.png"
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                      <div class="address_info">
+                        <p class="address">
+                          You will be redirected to PayPal website to complete
+                          your purchase securely.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="shipping_address_item payment_part">
+                      <div class="address_name payment">
+                        <div>
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="credit_debit"
+                            value="option1"
+                            checked
+                          />
+                          <label class="form-check-label" for="credit_debit">
+                            Credit / Debit Card
+                          </label>
+                        </div>
+                        <span>
+                          <img
+                            src="./../assets/images/payment/mastercard.png"
+                            alt=""
+                          />
+                          <img
+                            src="./../assets/images/payment/visa.png"
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                      <div class="address_info">
+                        <p class="address">
+                          We support Mastercard, Visa, Amex & American express
+                        </p>
+                      </div>
+                      <div class="cart-item-add-more">
+                        <a href="#" class="add_card">
+                          <span>
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1 10L19 10"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M10 1L9.99931 19"
+                                stroke="#E85342"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </span>
+                          Add Card
+                        </a>
+                      </div>
+                    </div>
+                    <div class="shipping_address_item">
+                      <div class="address_name payment">
+                        <div>
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="credit_debit"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="credit_debit">
+                            Cash on delivery
+                          </label>
+                        </div>
+                      </div>
+                      <div class="address_info">
+                        <p class="address">
+                          After delivery confirmation you can pay the amount
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- add cart -->
+                  <div class="edit_shipping_address edit_card_new d-none">
+                    <form action="">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="mb-3">
+                            <label for="nameCard" class="form-label"
+                              >Name On Card</label
+                            >
+                            <input
+                              type="text"
+                              id="nameCard"
+                              class="form-control"
+                              placeholder="Name On Card"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="mb-3">
+                            <label for="nameCard" class="form-label"
+                              >Card Number</label
+                            >
+                            <input
+                              type="text"
+                              id="nameCard"
+                              class="form-control"
+                              placeholder="Card Number"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6">
+                          <div class="mb-3">
+                            <label for="mm/yy" class="form-label">MM/YY</label>
+                            <input
+                              type="text"
+                              id="mm/yy"
+                              class="form-control"
+                              placeholder="MM/YY"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                          <div class="mb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input
+                              type="text"
+                              id="cvv"
+                              class="form-control"
+                              placeholder="CVV"
+                            />
+                          </div>
+                        </div>
+
+                        <div
+                          class="col-12 d-flex align-items-center justify-content-end gap-2"
+                        >
+                          <button class="btn warning payment-method-cancel">
+                            Cancel
+                          </button>
+                          <button class="btn success payment-method-cancel">
+                            Save
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- profile -->
+
+      <section class="mobile_nav mob_nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="mobile_sticky_nav">
+                <li class="">
+                  <a class="" href="./../index.html">
+                    <i class="ph-house"></i>
+                    Home</a
+                  >
+                </li>
+
+                <li class="">
+                  <a class="" href="./widhlist.html">
+                    <i class="ph-heart"></i>
+                    Wishlist</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="nav-link border-0 bg-transparent"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
+                    <i class="ph-handbag"></i>
+                    Cart
+                  </a>
+                </li>
+                <li>
+                  <a class="active" href="./profile.html">
+                    <i class="ph-user"></i>
+                    Account</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- main body -->
+
+    <!-- scroll top -->
+    <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="ph-arrow-up"></i>
+    </button>
+    <!-- scroll top -->
+
+    <!-- bag canvas -->
+    <div
+      class="offcanvas offcanvas-end cart-bag"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">In Your Bag</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="cart_added">
+          <div class="cart_added_item">
+            <div class="img">
+              <img
+                class="img-fluid"
+                src="./../assets/images/cart-item/item.png"
+                alt=""
+              />
+            </div>
+            <div class="title_price">
+              <div class="cart_title_price">
+                <h4>
+                  Muebles Sofa - Blue Performance Fabric with customize texture
+                </h4>
+                <span class="price"> $1,598 </span>
+              </div>
+              <div class="product_cat">
+                <p>Taylor Flet Gray</p>
+              </div>
+              <div class="cart_inc_dec_del">
+                <div class="input-group">
+                  <button data-decrease class="quantity-left-minus">
+                    <i class="ph-minus"></i>
+                  </button>
+                  <input
+                    class="form-control input-number"
+                    data-value
+                    type="text"
+                    value="0"
+                    disabled
+                  />
+                  <button data-increase class="quantity-right-plus">
+                    <i class="ph-plus"></i>
+                  </button>
+                </div>
+                <div class="cart_del_btn">
+                  <i class="ph-trash"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart_added_item">
+            <div class="img">
+              <img
+                class="img-fluid"
+                src="./../assets/images/cart-item/item1.png"
+                alt=""
+              />
+            </div>
+            <div class="title_price">
+              <div class="cart_title_price">
+                <h4>
+                  Muebles Sofa - gray colored shifon texture with non-allergic
+                </h4>
+                <span class="price"> $1,598 </span>
+              </div>
+              <div class="product_cat">
+                <p>Taylor Flet Gray</p>
+              </div>
+              <div class="cart_inc_dec_del">
+                <div class="input-group">
+                  <button data-decrease class="quantity-left-minus">
+                    <i class="ph-minus"></i>
+                  </button>
+                  <input
+                    class="form-control input-number"
+                    data-value
+                    type="text"
+                    value="0"
+                    disabled
+                  />
+                  <button data-increase class="quantity-right-plus">
+                    <i class="ph-plus"></i>
+                  </button>
+                </div>
+                <div class="cart_del_btn">
+                  <i class="ph-trash"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart_footer">
+          <div class="promocode">
+            <button class="apply">Apply gift card or promo code +</button>
+            <div class="promoCodeFeild d-none">
+              <input
+                class="couponText"
+                type="text"
+                placeholder="Coupen or gift"
+              />
+              <button class="promo_apply">Apply</button>
+            </div>
+          </div>
+          <div class="subtotal">
+            <p class="subtotal">Subtotal</p>
+            <span class="price">$3100.00</span>
+          </div>
+          <div class="subtotal discount d-none">
+            <p class="subtotal">discount</p>
+            <span class="price">$30.00</span>
+          </div>
+          <div class="btn_part">
+            <a
+              class="btn success-outliine w-100 view_cart py-2"
+              href="./view-cart.html"
+            >
+              View Cart
+            </a>
+            <a href="./checkOutProcess.html" class="checkout">
+              Checkout - $3100.00
+            </a>
+          </div>
+          <p class="shipping_tax">Shipping & Taxes Calculated at Checkout</p>
+        </div>
+      </div>
+    </div>
+    <!-- bag canvas -->
+
+   
+
+    <!-- js -->
+    <script
+      type="text/javascript"
+      src="./../assets/js/jquery-3.6.0.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/plugins/smooth-scroll/smooth-scroll.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./../assets/plugins/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="./../assets/js/hamburger.js"></script>
+    <script
+      type="text/javascript"
+      src="./../assets/js/swiper-bundle.min.js"
+    ></script>
+    <script type="text/javascript" src="./../assets/js/main.js"></script>
+  </body>
+</html>

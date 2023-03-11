@@ -1,0 +1,278 @@
+.popular_courses {
+  padding-top: 148px;
+  padding-bottom: 128px;
+}
+.popular_courses h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #474d66;
+  z-index: 999;
+}
+.popular_courses h4 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #101840;
+  margin-bottom: 36px;
+  z-index: 999;
+}
+
+/* tabs design */
+.popular_courses .shorting-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 64px;
+  overflow-x: auto;
+}
+.popular_courses .shorting-menu::-webkit-scrollbar {
+  height: 0;
+}
+.popular_courses .filter {
+  padding: 10px 16px;
+  background-color: transparent !important;
+  border-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #474d66;
+  white-space: nowrap;
+  margin-right: 8px;
+}
+.popular_courses .filter.active {
+  color: #317159;
+  background-color: #dcf2ea !important;
+  border-radius: 4px;
+}
+.popular_courses .mix {
+  display: none;
+}
+.popular_courses .mix .mix-item {
+  margin-bottom: 4rem;
+  padding: 24px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgb(16 24 64 / 8%);
+  border-radius: 8px;
+}
+
+.popular_courses .mix .mix-item .img {
+  position: relative;
+  top: -3rem;
+  left: 0;
+  box-shadow: 0px 4px 8px rgba(16, 24, 64, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.popular_courses .mix .mix-item .img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.popular_courses .mix .mix-item:hover .img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.popular_courses .mix .mix-item .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popular_courses .mix .desc .cat {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #66460d;
+  background: #ffefd2;
+  border-radius: 4px;
+  text-align: center;
+  padding: 4px 0;
+}
+.popular_courses .mix .desc .star {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+  padding: 4px 0;
+}
+.popular_courses .mix .desc .star i {
+  color: #ffc107;
+}
+.popular_courses .mix .desc .star p {
+  margin-bottom: 0;
+}
+.popular_courses .mix .desc h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #101840;
+}
+.popular_courses .mix .desc .lessong_person {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.popular_courses .mix .desc .lessong_person p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #474d66;
+}
+.popular_courses .mix .desc .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular_courses .mix .desc .price p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #101840;
+}
+.popular_courses .mix .desc .price a i {
+  color: #101840;
+  font-weight: 600;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.popular_courses .mix:hover .desc .price a i {
+  color: #fff;
+  background: #429777;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+/* responsive */
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .popular_courses {
+    padding-top: 0;
+  }
+  .popular_courses .mix .desc {
+    padding: 0;
+  }
+  .popular_courses .mix .desc .row .col-5 {
+    padding: 0;
+  }
+  .popular_courses .mix .desc .cat {
+    font-size: 12px;
+  }
+  .popular_courses .mix .desc .star {
+    gap: 3px;
+  }
+  .popular_courses p {
+    font-size: 12px;
+  }
+  .popular_courses .mix .desc h4 {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+}
+@media (min-width: 649px) and (max-width: 991px) {
+  .popular_courses .mix .desc .row .col-5 {
+    padding: 0 0;
+  }
+  .popular_courses .mix .desc .cat {
+    font-size: 12px;
+  }
+  .popular_courses .mix .desc .star {
+    gap: 3px;
+  }
+  .popular_courses p {
+    font-size: 12px;
+  }
+  .popular_courses .mix .desc h4 {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 649px) {
+  .popular_courses {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .popular_courses h6 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .popular_courses h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .popular_courses .filter {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 6px 16px;
+  }
+  .popular_courses .mix .mix-item {
+    padding: 16px;
+  }
+  .popular_courses .mix .desc .cat {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .popular_courses .mix .desc .star {
+    gap: 3px;
+  }
+  .popular_courses .mix .desc .star p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .popular_courses .mix .desc h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .popular_courses .mix .desc .lessong_person p {
+    margin-bottom: 0;
+  }
+  .popular_courses .mix .desc .price p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1357px) {
+}
+/* responsive */

@@ -1,0 +1,255 @@
+.modal {
+  z-index: 10001;
+}
+.login-modal {
+  max-width: 600px;
+}
+.login-modal .modal-header {
+  border: 0;
+}
+.login-modal .modal-content .modal-body {
+  padding: 0 68px;
+}
+.login-modal .modal-content .auth-pad {
+  padding: 0 50px;
+  margin-top: 48px;
+}
+.login-modal .modal-content h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #101840;
+}
+.login-modal .modal-content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #474d66;
+}
+.login-modal .modal-content .auth-pad label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #101840;
+}
+.login-modal .modal-content .auth-pad input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #474d66;
+  padding: 16px 16px;
+  border: 1px solid #8f95b2;
+  border-radius: 4px;
+}
+.login-modal .modal-content .auth-pad .eye {
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  cursor: pointer;
+}
+.login-modal .modal-content .auth-pad .forget-password a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #429777;
+}
+.login-modal .modal-content .auth-pad .remember-me label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #474d66;
+}
+.login-modal .modal-content .auth-pad .check-container {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  position: relative;
+}
+.login-modal .modal-content .auth-pad .check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.login-modal .modal-content .auth-pad .checkmark {
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  border: 1.5px solid #429777;
+  position: relative;
+  background-color: #429777;
+}
+.login-modal .modal-content .auth-pad .checkmark svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.login-modal .modal-content .auth-pad input:checked ~ .checkmark svg {
+  opacity: 1;
+}
+
+.login-modal .modal-content .auth-pad .check-container p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #474d66;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.login-modal .modal-content .auth-pad .submit-btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.login-modal .modal-content .auth-pad hr {
+  margin: 24px 0;
+}
+.login-modal .modal-content .auth-pad .or {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #474d66;
+  background-color: #ffffff;
+  padding: 0 8px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.login-modal .modal-content .auth-pad .scial-link {
+  border: 1px solid #474d66;
+  border-radius: 4px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.login-modal .modal-content .auth-pad .scial-link a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #101840;
+}
+.login-modal .modal-content .auth-pad .forget-pass p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101840;
+}
+.login-modal .modal-content .auth-pad .forget-pass p a {
+  color: #429777;
+}
+.login-modal .modal-content .auth-pad .pass-validation {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #474d66;
+}
+/* forgot-pass-modal */
+.forgot-pass-modal .modal-content .auth-pad .scial-link {
+  justify-content: center;
+  padding: 12px 24px;
+  border: 1px solid #429777;
+}
+.forgot-pass-modal .modal-content .auth-pad .mail-me-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #429777 !important;
+}
+.forgot-pass-modal .modal-content .auth-pad #message {
+  margin-bottom: 16px;
+}
+.forgot-pass-modal .modal-content .auth-pad #message .row {
+  padding: 12px 16px;
+  border: 1px solid #d14343;
+  border-radius: 8px;
+}
+.forgot-pass-modal .modal-content .auth-pad #message i {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #a73636;
+}
+.forgot-pass-modal .modal-content .auth-pad #message h6 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #a73636;
+  text-align: left;
+}
+.forgot-pass-modal .modal-content .auth-pad #message p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #696f8c;
+  text-align: left;
+}
+
+.loginLink-modal .modal-content .auth-pad p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #474d66;
+  margin-bottom: 4px;
+}
+.loginLink-modal .modal-content .auth-pad h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #101840;
+  margin-bottom: 36px;
+}
+.loginLink-modal .modal-content .auth-pad .scial-link {
+  width: fit-content;
+  margin: 0 auto;
+}
+.loginLink-modal .modal-content .auth-pad .scial-link a {
+}
+.loginLink-modal .modal-content .auth-pad {
+}
+.loginLink-modal .modal-content .auth-pad {
+}
+.loginLink-modal .modal-content .auth-pad {
+}
+.loginLink-modal .modal-content .auth-pad {
+}
+.loginLink-modal .modal-content .auth-pad {
+}
+.loginLink-modal .modal-content .auth-pad {
+}

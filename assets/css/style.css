@@ -1,0 +1,64 @@
+/* font icons */
+@import url("./icons.css");
+/* Theme Bootstrap Min Css */
+@import url("./bootstrap.min.css");
+/* Theme Slick Css */
+@import url("./../plugins/slick/slick.css");
+/* Theme swiper Css */
+@import url("./swiper-bundle.min.css");
+/* Theme Css Hamburger */
+@import url("./hamburger.css");
+/* Theme Css Common */
+@import url("./common.css");
+/* Theme Css navbar */
+@import url("./navbar.css");
+/* theme css auth */
+@import url("./auth.css");
+/* Theme Css hero */
+@import url("./hero.css");
+/* Theme Css future */
+@import url("./future.css");
+/* Theme Css categories */
+@import url("./categories.css");
+/* Theme Css popular-courses */
+@import url("./popular-courses.css");
+/* Theme Css career */
+@import url("./career.css");
+/* Theme Css instructor */
+@import url("./instructor.css");
+/* Theme Css all_courses */
+@import url("./all_courses.css");
+/* Theme Css comming-soon */
+@import url("./comming-soon.css");
+/* Theme Css footer */
+@import url("./footer.css");
+/* Theme Css reset-password */
+@import url("./reset-password.css");
+/* Theme Css all-products */
+@import url("./course-categories.css");
+/* Theme Css all-products-details */
+@import url("./course-categories-details.css");
+
+/* old css */
+/* Theme Css single-product */
+@import url("./single-product.css");
+/* Theme Css customer-review */
+@import url("./customer-review.css");
+/* Theme Css single-product-slider-modal */
+@import url("./single-product-slider-modal.css");
+/* Theme Css view-cart */
+@import url("./view-cart.css");
+/* Theme Css checkout */
+@import url("./checkout.css");
+/* Theme Css terms-condition */
+@import url("./terms-condition.css");
+/* Theme Css 4O4 */
+@import url("./4O4.css");
+/* Theme Css about */
+@import url("./about.css");
+/* Theme Css about */
+@import url("./profile.css");
+/* Theme Css media-query */
+@import url("./media-query.css");
+
+/* ----------------------- */

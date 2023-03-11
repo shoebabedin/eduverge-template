@@ -1,0 +1,49 @@
+.instructor {
+  background-color: #f5fbf8;
+  padding: 118px 0;
+}
+.instructor .row {
+  align-items: center;
+}
+.instructor h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #0e2341;
+  margin-bottom: 24px;
+}
+.instructor p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #696f8c;
+}
+
+/* responsive */
+@media (min-width: 1024px) and (max-width: 1400px) {
+}
+@media (min-width: 649px) and (max-width: 991px) {
+}
+@media (min-width: 320px) and (max-width: 649px) {
+  .instructor {
+    padding: 24px 0;
+  }
+  .instructor h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+  .instructor p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 36px;
+  }
+  .instructor a {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 8px 16px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1357px) {
+}
+/* responsive */
