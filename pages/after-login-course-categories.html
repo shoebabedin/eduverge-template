@@ -108,7 +108,7 @@
       <!-- navbar -->
       <nav id="top_navbar" class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./../index.html">
+          <a class="navbar-brand" href="./after-login-home.html">
             <img
               class="img-fluid"
               src="./../assets/images/logo/logo.png"
@@ -137,7 +137,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="./../index.html"
+                  href="./after-login-home.html"
                   >Home</a
                 >
               </li>
@@ -314,11 +314,58 @@
                 aria-label="Search"
               />
             </form>
-
-            <div class="cart">
+            <div class="my-courses">
+              <a href="">My courses</a>
+            </div>
+            <div class="cart me-3 ms-3">
               <a href="!#" class="mobile nav-link text-center">Cart (0)</a>
+              <button type="button" class="btn position-relative desktop">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.25 17.25H6.54375L3.92813 2.86875C3.89752 2.69653 3.80768 2.54042 3.67415 2.42743C3.54062 2.31444 3.37179 2.25168 3.19687 2.25H1.5"
+                    stroke="#101840"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.5 21C8.53553 21 9.375 20.1605 9.375 19.125C9.375 18.0895 8.53553 17.25 7.5 17.25C6.46447 17.25 5.625 18.0895 5.625 19.125C5.625 20.1605 6.46447 21 7.5 21Z"
+                    stroke="#101840"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.25 21C18.2855 21 19.125 20.1605 19.125 19.125C19.125 18.0895 18.2855 17.25 17.25 17.25C16.2145 17.25 15.375 18.0895 15.375 19.125C15.375 20.1605 16.2145 21 17.25 21Z"
+                    stroke="#101840"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5.85938 13.5H17.6344C17.985 13.5011 18.3247 13.3785 18.5939 13.1539C18.8631 12.9293 19.0445 12.617 19.1063 12.2719L20.25 6H4.5"
+                    stroke="#101840"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  2
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+            </div>
+            <div class="cart me-3">
               <svg
-                class="desktop"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -326,50 +373,83 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M17.25 17.25H6.54375L3.92813 2.86875C3.89752 2.69653 3.80768 2.54042 3.67415 2.42743C3.54062 2.31444 3.37179 2.25168 3.19687 2.25H1.5"
-                  stroke="#101840"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.2712 2.66963C13.5643 2.39815 12.7982 2.25 12.0006 2.25C8.77198 2.25 6.05962 4.67767 5.70308 7.88659L5.45127 10.1528L5.44512 10.2078C5.32826 11.2261 4.9968 12.2081 4.47259 13.0889L4.44418 13.1364L3.86615 14.0998L3.84672 14.1321C3.60105 14.5416 3.38798 14.8966 3.24771 15.1945C3.1056 15.4962 2.97397 15.8655 3.03822 16.2727C3.10415 16.6906 3.31921 17.0704 3.64359 17.3419C3.95972 17.6066 4.34415 17.6837 4.67599 17.7171C5.00357 17.75 5.41766 17.75 5.89513 17.75L5.93288 17.75H18.0684L18.1062 17.75C18.5836 17.75 18.9977 17.75 19.3253 17.7171C19.6571 17.6837 20.0416 17.6066 20.3577 17.3419C20.6821 17.0704 20.8971 16.6906 20.9631 16.2727C21.0273 15.8655 20.8957 15.4962 20.7536 15.1945C20.6133 14.8966 20.4003 14.5416 20.1546 14.1322L20.1546 14.1322L20.1351 14.0998L19.5571 13.1364L19.5287 13.0889C19.1339 12.4255 18.8484 11.7046 18.6816 10.954C18.4589 10.9843 18.2316 11 18.0006 11C17.7095 11 17.4241 10.9751 17.1466 10.9273C17.3319 11.9598 17.7017 12.9521 18.2397 13.8561L18.2709 13.9081L18.8489 14.8715C19.1196 15.3227 19.2924 15.6124 19.3966 15.8336C19.4605 15.9694 19.4754 16.0337 19.4788 16.0527C19.4681 16.1024 19.4425 16.1477 19.4054 16.1824C19.3874 16.1893 19.3246 16.2096 19.1752 16.2246C18.9319 16.2491 18.5946 16.25 18.0684 16.25H5.93288C5.40674 16.25 5.06937 16.2491 4.82614 16.2246C4.67673 16.2096 4.61394 16.1893 4.59589 16.1824C4.5588 16.1477 4.53318 16.1024 4.52246 16.0527C4.52588 16.0337 4.54076 15.9694 4.60474 15.8336C4.7089 15.6124 4.88169 15.3227 5.15239 14.8715L5.73042 13.9081L5.76159 13.8561C6.39426 12.793 6.79431 11.6078 6.93534 10.3788L6.9421 10.3185L7.1939 8.05224C7.46604 5.60297 9.5363 3.75 12.0006 3.75C12.4976 3.75 12.9785 3.82534 13.4318 3.96573C13.6441 3.48979 13.9285 3.05312 14.2712 2.66963ZM16.7746 4.41972C16.335 4.76129 16.0417 5.2823 16.0046 5.8728C16.3407 6.368 16.588 6.93032 16.7223 7.53822C17.0689 7.82658 17.5145 8 18.0006 8C18.1052 8 18.2079 7.99197 18.3082 7.9765L18.2982 7.8866C18.1506 6.55813 17.5992 5.36357 16.7746 4.41972Z"
+                  fill="#101840"
                 />
                 <path
-                  d="M7.5 21C8.53553 21 9.375 20.1605 9.375 19.125C9.375 18.0895 8.53553 17.25 7.5 17.25C6.46447 17.25 5.625 18.0895 5.625 19.125C5.625 20.1605 6.46447 21 7.5 21Z"
+                  d="M9.10222 17.6647C9.27315 18.6215 9.64978 19.467 10.1737 20.0701C10.6976 20.6731 11.3396 21 12 21C12.6604 21 13.3024 20.6731 13.8263 20.0701C14.3502 19.467 14.7269 18.6215 14.8978 17.6647"
                   stroke="#101840"
                   stroke-width="1.5"
                   stroke-linecap="round"
-                  stroke-linejoin="round"
                 />
-                <path
-                  d="M17.25 21C18.2855 21 19.125 20.1605 19.125 19.125C19.125 18.0895 18.2855 17.25 17.25 17.25C16.2145 17.25 15.375 18.0895 15.375 19.125C15.375 20.1605 16.2145 21 17.25 21Z"
-                  stroke="#101840"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M5.85938 13.5H17.6344C17.985 13.5011 18.3247 13.3785 18.5939 13.1539C18.8631 12.9293 19.0445 12.617 19.1063 12.2719L20.25 6H4.5"
-                  stroke="#101840"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                <circle
+                  cx="18"
+                  cy="6"
+                  r="2.5"
+                  fill="#D14343"
+                  stroke="#D14343"
                 />
               </svg>
             </div>
             <div class="auth-btn">
-              <a
-                href="#"
-                class="btn bg-success text-white me-3 ms-3"
-                data-bs-toggle="modal"
-                data-bs-target="#login"
-                >Login</a
-              >
-              <a
-                href="#"
-                class="btn border border-success-subtle text-success"
-                data-bs-toggle="modal"
-                data-bs-target="#register"
-                >Register Now</a
-              >
+              <ul>
+                <li class="nav-item dropdown desktop">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="32" height="32" rx="16" fill="#EDEFF5" />
+                      <path
+                        d="M15.998 18.999C19.3118 18.999 21.998 16.3127 21.998 12.999C21.998 9.68531 19.3118 6.99902 15.998 6.99902C12.6843 6.99902 9.99805 9.68531 9.99805 12.999C9.99805 16.3127 12.6843 18.999 15.998 18.999Z"
+                        stroke="#101840"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M6.9043 24.2489C7.8258 22.6525 9.15133 21.3267 10.7476 20.405C12.3439 19.4833 14.1547 18.998 15.998 18.998C17.8413 18.998 19.6522 19.4833 21.2485 20.405C22.8448 21.3267 24.1703 22.6525 25.0918 24.2489"
+                        stroke="#101840"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                  <div class="dropdown-menu">
+                    <ul class="ps-0">
+                      <li>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Settings</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">My Courses</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Order History</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">My Certification</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -431,7 +511,7 @@
                   />
                 </form>
                 <h4>Categories</h4>
-                <hr>
+                <hr />
                 <ul>
                   <h6>Design & Development</h6>
                   <li class="active">
@@ -501,7 +581,7 @@
               <div class="courses-header">
                 <h3>116 Course Found</h3>
                 <div class="short_by">
-                 <p>Sort By</p>
+                  <p>Sort By</p>
                   <span class="dropdown">
                     <input
                       type="checkbox"
@@ -515,7 +595,7 @@
                           class="dropdown__filter-selected"
                           aria-selected="true"
                         >
-                        Default
+                          Default
                         </li>
                         <li>
                           <ul class="dropdown__select">
@@ -630,7 +710,7 @@
                             <hr />
                             <div class="price">
                               <p>$199.00</p>
-                              <a href="./course-categories-details.html">
+                              <a href="./after-login-course-categories-details.html">
                                 <i class="ph-arrow-right"></i>
                               </a>
                             </div>
@@ -730,7 +810,7 @@
                             <hr />
                             <div class="price">
                               <p>$199.00</p>
-                              <a href="./course-categories-details.html">
+                              <a href="./after-login-course-categories-details.html">
                                 <i class="ph-arrow-right"></i>
                               </a>
                             </div>
@@ -830,7 +910,7 @@
                             <hr />
                             <div class="price">
                               <p>$199.00</p>
-                              <a href="./course-categories-details.html">
+                              <a href="./after-login-course-categories-details.html">
                                 <i class="ph-arrow-right"></i>
                               </a>
                             </div>
@@ -930,7 +1010,7 @@
                             <hr />
                             <div class="price">
                               <p>$199.00</p>
-                              <a href="./course-categories-details.html">
+                              <a href="./after-login-course-categories-details.html">
                                 <i class="ph-arrow-right"></i>
                               </a>
                             </div>
@@ -1030,7 +1110,7 @@
                             <hr />
                             <div class="price">
                               <p>$199.00</p>
-                              <a href="./course-categories-details.html">
+                              <a href="./after-login-course-categories-details.html">
                                 <i class="ph-arrow-right"></i>
                               </a>
                             </div>
@@ -1132,7 +1212,7 @@
                             <hr />
                             <div class="price">
                               <p>$199.00</p>
-                              <a href="./course-categories-details.html">
+                              <a href="./after-login-course-categories-details.html">
                                 <i class="ph-arrow-right"></i>
                               </a>
                             </div>
@@ -1232,7 +1312,7 @@
                             <hr />
                             <div class="price">
                               <p>$199.00</p>
-                              <a href="./course-categories-details.html">
+                              <a href="./after-login-course-categories-details.html">
                                 <i class="ph-arrow-right"></i>
                               </a>
                             </div>
@@ -1334,7 +1414,7 @@
                             <hr />
                             <div class="price">
                               <p>$199.00</p>
-                              <a href="./course-categories-details.html">
+                              <a href="./after-login-course-categories-details.html">
                                 <i class="ph-arrow-right"></i>
                               </a>
                             </div>
@@ -1434,7 +1514,7 @@
                             <hr />
                             <div class="price">
                               <p>$199.00</p>
-                              <a href="./course-categories-details.html">
+                              <a href="./after-login-course-categories-details.html">
                                 <i class="ph-arrow-right"></i>
                               </a>
                             </div>

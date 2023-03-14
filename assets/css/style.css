@@ -2,8 +2,10 @@
 @import url("./icons.css");
 /* Theme Bootstrap Min Css */
 @import url("./bootstrap.min.css");
-/* Theme Slick Css */
+/* Slick Css */
 @import url("./../plugins/slick/slick.css");
+/* Theme Slick Css */
+@import url("./../css/slick-theme.css");
 /* Theme swiper Css */
 @import url("./swiper-bundle.min.css");
 /* Theme Css Hamburger */
@@ -38,6 +40,8 @@
 @import url("./course-categories.css");
 /* Theme Css all-products-details */
 @import url("./course-categories-details.css");
+/* Theme Css view-cart */
+@import url("./checkout-list.css");
 
 /* old css */
 /* Theme Css single-product */
@@ -46,10 +50,8 @@
 @import url("./customer-review.css");
 /* Theme Css single-product-slider-modal */
 @import url("./single-product-slider-modal.css");
-/* Theme Css view-cart */
-@import url("./view-cart.css");
 /* Theme Css checkout */
-@import url("./checkout.css");
+/* @import url("./checkout.css"); */
 /* Theme Css terms-condition */
 @import url("./terms-condition.css");
 /* Theme Css 4O4 */
@@ -59,6 +61,6 @@
 /* Theme Css about */
 @import url("./profile.css");
 /* Theme Css media-query */
-@import url("./media-query.css");
+/* @import url("./media-query.css"); */
 
 /* ----------------------- */

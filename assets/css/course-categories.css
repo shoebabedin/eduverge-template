@@ -21,27 +21,69 @@
   border-radius: 8px;
   padding: 32px 16px;
 }
+.all-course-categories .all-course-sidebar .search {
+  position: relative;
+  border: 1px solid #8f95b2;
+  border-radius: 4px;
+  padding: 0 16px;
+  overflow: hidden;
+}
+.all-course-categories .all-course-sidebar .search .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.all-course-categories .all-course-sidebar .search .form-control {
+  border: 0;
+  padding-left: 8%;
+  box-shadow: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--N700);
+  min-width: 360px;
+  width: 100%;
+  background: transparent;
+}
+
 .all-course-categories .all-course-sidebar ul {
   padding-left: 0;
 }
 .all-course-categories .all-course-sidebar h4 {
-  padding-left: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #101840;
+  padding: 16px 10px 0;
+  margin-bottom: 0;
 }
-.all-course-categories .all-course-sidebar a {
+.all-course-categories .all-course-sidebar ul li {
+  background-color: transparent;
+}
+.all-course-categories .all-course-sidebar ul li:hover {
+  background-color: #f4f6fa;
+}
+.all-course-categories .all-course-sidebar ul li.active {
+  background-color: #696f8c;
+}
+.all-course-categories .all-course-sidebar ul li a {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #474d66;
+  color: #101840;
+  padding: 6px 8px;
+  display: block;
 }
-.all-course-categories .all-course-sidebar a:active {
+.all-course-categories .all-course-sidebar ul li.active a {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #ff0101;
+  color: #fff;
 }
 .all-course-categories .all-course-sidebar ul h6 {
   font-weight: 600;
@@ -61,24 +103,105 @@
 .all-course-categories .courses-header h3 {
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
   color: #101840;
 }
-.all-course-categories .courses-header p {
+
+.all-course-categories .courses-header .short_by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.all-course-categories .courses-header .short_by p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #101840;
+  margin-bottom: 0;
+}
+
+.dropdown__switch:checked + .dropdown__options-filter .dropdown__select {
+  transform: scaleY(1);
+}
+.dropdown__switch:checked + .dropdown__options-filter .dropdown__filter:after {
+  transform: rotate(-135deg);
+}
+.dropdown__options-filter {
+  width: 100%;
+  cursor: pointer;
+}
+.dropdown__filter {
+  position: relative;
+  display: flex;
+  background: #f4f6fa;
+  border-radius: 4px;
+  padding: 20px 40px 20px 20px;
+  color: #595959;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.5px;
   color: #474d66;
+  transition: 0.3s;
   margin-bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  cursor: pointer;
+  min-width: 128px;
+  width: 100%;
+}
+.dropdown__filter:focus {
+  border: 0px solid #918ff4;
+  outline: none;
+  box-shadow: none;
+}
+.dropdown__filter::after {
+  position: absolute;
+  top: 45%;
+  right: 20px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #595959;
+  border-bottom: 2px solid #595959;
+  transform: rotate(45deg) translateX(-45%);
+  transition: 0.2s ease-in-out;
+}
+.dropdown__select {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 0 rgba(152, 152, 152, 0.6);
+  transform: scaleY(0);
+  transform-origin: top;
+  font-weight: 300;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+  padding: 12px 8px;
+  background: #ffffff;
+}
+.dropdown__select-option {
+  padding: 4px 8px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: 0.3s;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #474d66;
+  margin-bottom: 4px;
+}
+.dropdown__select-option:last-of-type {
+  margin-bottom: 0px;
+}
+.dropdown__select-option:hover {
+  background-color: #f4f6fa;
 }
 .all-course-categories .mix .mix-item {
   margin-bottom: 4rem;

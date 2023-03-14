@@ -145,6 +145,45 @@
 
 /* offcanvas */
 
+/* after login navbar */
+#top_navbar .my-courses a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101840;
+}
+#top_navbar .cart .btn {
+  padding: 0;
+}
+#top_navbar .cart .btn span {
+  background-color: #f9dada !important;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #7d2828;
+}
+#top_navbar .auth-btn ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+#top_navbar .auth-btn .dropdown-toggle::after {
+  display: none;
+}
+#top_navbar .auth-btn .dropdown-menu.show {
+  display: block;
+  left: auto;
+  right: 0;
+}
+#top_navbar .auth-btn .dropdown-menu .dropdown-item {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #101840;
+}
+
+/* after login navbar */
+
 /* responsive */
 @media (min-width: 1358px) and (max-width: 1440px) {
   #top_navbar .btn {

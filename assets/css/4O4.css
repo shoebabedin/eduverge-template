@@ -1,10 +1,6 @@
 /* 4O4 */
 .notFound {
   padding-top: 80px;
-  background-image: url("./../images/4O4/error-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
 }
 .notFound .img {
@@ -12,29 +8,47 @@
 }
 .notFound h2 {
   font-weight: 700;
-  font-size: 64px;
-  line-height: 96px;
-  color: #38383e;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #101840;
   margin-bottom: 24px;
 }
-.notFound p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-  color: #77787c;
-  margin-bottom: 80px;
-}
+
 .notFound a {
-  background: #016a78;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  border: 1px solid #429777;
+  border-radius: 4px;
+  color: #429777;
   border-radius: 8px;
   display: inline-flex;
-  padding: 11.5px 20px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
   gap: 15px;
+  padding: 12px 24px;
 }
 
 /* 4O4 */
+
+/* responsive */
+@media (min-width: 320px) and (max-width: 650px) {
+  .notFound h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #101840;
+  }
+  .notFound a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #429777;
+    padding: 8px 16px;
+  }
+}
+
+/* responsive */
