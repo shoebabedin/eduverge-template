@@ -1,0 +1,158 @@
+.my-certification-modal {
+  padding-top: 5%;
+}
+.my-certification-modal .checkout-list {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: left;
+  color: #101840;
+  position: relative;
+}
+.my-certification-modal .checkout-list::after {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: 0;
+  background-color: #474d66;
+  height: 1px;
+  width: 160px;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+}
+.my-certification-modal ul {
+  padding-left: 0;
+  margin-top: 48px;
+}
+.my-certification-modal ul li {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+.my-certification-modal ul li .serial {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #696f8c;
+}
+.my-certification-modal ul li .certificate-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #474d66;
+}
+.my-certification-modal ul li .certificate-date {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #696f8c;
+}
+.my-certification-modal ul li .course-complete-status {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #52bd94;
+}
+
+.my-certification-modal ul li .course-progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.my-certification-modal ul li .course-progress-bar .progress {
+  --bs-progress-bg: rgba(82, 189, 148, 0.24);
+  border-radius: 2px;
+  min-width: 134px;
+  width: 100%;
+  height: 4px;
+}
+.my-certification-modal ul li .course-progress-bar .progress-percent {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #474d66;
+  margin-bottom: 0;
+}
+.my-certification-modal ul li .course-progress-bar {
+}
+.my-certification-modal ul li .course-progress-bar {
+}
+.my-certification-modal ul li .course-progress-bar {
+}
+.my-certification-modal ul li .course-progress-bar {
+}
+.my-certification-modal ul li .view_option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 29px;
+}
+.my-certification-modal ul li .view_option .btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  background-color: #52bd94 !important;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-certification-modal ul li .view_option .dots {
+  cursor: pointer;
+}
+
+.my-certification-modal ul li {
+}
+.my-certification-modal ul li {
+}
+.my-certification-modal ul li {
+}
+.my-certification-modal ul li {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}
+.my-certification-modal {
+}

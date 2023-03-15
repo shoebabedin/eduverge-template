@@ -333,7 +333,7 @@
 .checkout .payment-method .btn-group {
   margin-bottom: 40px;
 }
-.checkout .payment-method .payment-form{
+.checkout .payment-method .payment-form {
   max-width: 546px;
 }
 .checkout .payment-method .payment-form .form-label {
@@ -419,55 +419,96 @@
   white-space: nowrap;
 }
 
-.checkout .cart_footer .process-btn{
+.checkout .cart_footer .process-btn {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 24px;
   margin-top: 24px;
 }
-.checkout .cart_footer {
-}
-.checkout .cart_footer {
-}
-.checkout .cart_footer {
-}
-.checkout .cart_footer {
-}
-.checkout .cart_footer {
-}
-.checkout .cart_footer {
-}
-.checkout .cart_footer {
-}
-.checkout .cart_footer {
-}
-.checkout .cart_footer {
-}
-.checkout {
-}
-.checkout {
-}
-.checkout {
-}
-.checkout {
-}
-.checkout {
-}
-.checkout {
-}
-.checkout {
-}
-.checkout {
-}
-.checkout {
-}
-.checkout {
-}
-.checkout {
-}
-.checkout {
-}
-.checkout {
-}
+
 /* checkout */
+
+/* payment modal */
+.payment-modal .modal-body {
+  padding: 40px 43px;
+  text-align: center;
+}
+.payment-modal .modal-body .payment_img {
+  max-width: 71px;
+  max-height: 71px;
+  margin: 0 auto 23px;
+}
+.payment-modal .modal-body h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #429777;
+}
+.payment-modal .modal-body p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #696f8c;
+}
+.payment-modal .modal-body .payment-details {
+  background: #ffffff;
+  border-top: 8px solid #429777;
+  box-shadow: 0px 4px 10px rgba(112, 128, 176, 0.1);
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.payment-modal .modal-body .payment-details .payment-details-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 16px;
+  gap: 89px;
+}
+.payment-modal .modal-body .payment-details .payment-details-item p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #474d66;
+  margin-bottom: 0;
+}
+.payment-modal .modal-body .payment-details .payment-details-item span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #474d66;
+}
+.payment-modal .modal-body .payment-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 16px;
+}
+.payment-modal .modal-body .payment-btn a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  max-width: 161px;
+  width: 100%;
+}
+.payment-modal .modal-body .payment-btn button {
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #429777;
+}
+.payment-modal .modal-body .payment-btn .btn {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+/* payment modal */

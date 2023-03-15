@@ -456,227 +456,422 @@
       </nav>
       <!-- navbar -->
 
-      <div class="checkout_process_modal checkout">
+      <!-- Checkout List -->
+      <div class="checkout_process_modal my-certification-modal">
         <div class="modal-body">
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <h2 class="checkout-head">Payment Method</h2>
+                <h2 class="checkout-list">My Certification</h2>
+                <hr />
               </div>
-              <div class="col-12">
-                <div class="tab">
-                  <div class="row">
-                    <div class="col-lg-8">
-                      <div class="payment-method">
-                        <div
-                          class="btn-group"
-                          role="group"
-                          aria-label="Basic radio toggle button group"
+              <div class="col-lg-12">
+                <ul>
+                  <li class="row">
+                    <div class="col-1">
+                      <p class="serial">01</p>
+                    </div>
+                    <div class="col">
+                      <h4 class="certificate-title">
+                        UI/UX Design Golden Course
+                      </h4>
+                    </div>
+                    <div class="col">
+                      <p class="certificate-date">Enrolled: 24/12/2022</p>
+                    </div>
+                    <div class="col">
+                      <span class="course-complete-status">Completed</span>
+                    </div>
+
+                    <div class="col">
+                      <div class="view_option">
+                        <button
+                          class="btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#viewCertificate"
                         >
-                          <div class="img">
-                            <input
-                              type="radio"
-                              class="btn-check"
-                              name="btnradio"
-                              id="btnradio1"
-                              autocomplete="off"
-                              checked
+                          View Certificate
+                        </button>
+                        <span class="dots">
+                          <svg
+                            width="16"
+                            height="5"
+                            viewBox="0 0 16 5"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M4 2.03027C4 3.13484 3.10457 4.03027 2 4.03027C0.895431 4.03027 0 3.13484 0 2.03027C0 0.925704 0.895431 0.0302734 2 0.0302734C3.10457 0.0302734 4 0.925704 4 2.03027ZM16 2.03027C16 3.13484 15.1046 4.03027 14 4.03027C12.8954 4.03027 12 3.13484 12 2.03027C12 0.925704 12.8954 0.0302734 14 0.0302734C15.1046 0.0302734 16 0.925704 16 2.03027ZM8 4.03027C9.10457 4.03027 10 3.13484 10 2.03027C10 0.925704 9.10457 0.0302734 8 0.0302734C6.89543 0.0302734 6 0.925704 6 2.03027C6 3.13484 6.89543 4.03027 8 4.03027Z"
+                              fill="#696F8C"
                             />
-                            <label class="btn" for="btnradio1"
-                              ><img
-                                src="./../assets/images/payment/master-card.png"
-                                alt=""
-                                class="img-fluid"
-                              />
-
-                              <span class="select"
-                                ><img
-                                  class="img-fluid"
-                                  src="./../assets/images/payment/select.png"
-                                  alt=""
-                              /></span>
-                            </label>
-                          </div>
-                          <div class="img">
-                            <input
-                              type="radio"
-                              class="btn-check"
-                              name="btnradio"
-                              id="btnradio2"
-                              autocomplete="off"
-                            />
-                            <label class="btn" for="btnradio2"
-                              ><img
-                                src="./../assets/images/payment/visa.png"
-                                alt=""
-                                class="img-fluid"
-                              />
-                              <span class="select"
-                                ><img
-                                  class="img-fluid"
-                                  src="./../assets/images/payment/select.png"
-                                  alt=""
-                              /></span>
-                            </label>
-                          </div>
-                          <div class="img">
-                            <input
-                              type="radio"
-                              class="btn-check"
-                              name="btnradio"
-                              id="btnradio3"
-                              autocomplete="off"
-                            />
-                            <label class="btn" for="btnradio3"
-                              ><img
-                                src="./../assets/images/payment/american-express.png"
-                                alt=""
-                                class="img-fluid"
-                              />
-
-                              <span class="select"
-                                ><img
-                                  class="img-fluid"
-                                  src="./../assets/images/payment/select.png"
-                                  alt=""
-                              /></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="payment-form">
-                          <form class="row g-3">
-                            <div class="col-md-12">
-                              <label for="inputEmail4" class="form-label"
-                                >Card Number</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputEmail4"
-                                placeholder="5521 4584 6559 5994"
-                              />
-                            </div>
-                            <div class="col-md-12">
-                              <label for="inputPassword4" class="form-label"
-                                >Card Holder Name</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputPassword4"
-                                placeholder="Rehan Khan"
-                              />
-                            </div>
-                            <div class="col-md-6">
-                              <label for="custom-input-date" class="form-label"
-                                >Expiration Date</label
-                              >
-                              <input
-                                type="date"
-                                class="form-control calendar"
-                                id="custom-input-date"
-                                placeholder="08/25"
-                              />
-                            </div>
-                            <div class="col-md-6">
-                              <label for="password" class="form-label"
-                                >CVC / CVV</label
-                              >
-                              <div class="password-filed">
-                                <input
-                                  type="password"
-                                  class="form-control"
-                                  id="password"
-                                  placeholder="***"
-                                />
-                                <span onclick="myFunction()">
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 20 20"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
-                                      d="M20 9.9625C20 9.95 20 9.95 20 9.9375V9.925C20 9.9125 20 9.9125 20 9.9C20 9.8875 20 9.8875 20 9.875C19.975 9.7 19.9 9.55 19.7875 9.425C19.175 8.6375 18.45 7.925 17.725 7.275L13.775 10.1C13.725 12.1125 12.075 13.725 10.05 13.725C9.6625 13.725 9.3 13.65 8.95 13.5375L6.3625 15.375C6.9125 15.6125 7.4875 15.825 8.075 15.9625C9.2875 16.25 10.5 16.2625 11.725 16.025C12.825 15.8125 13.9 15.35 14.8875 14.8C16.45 13.925 17.875 12.7125 19.1125 11.3625C19.3375 11.1125 19.575 10.85 19.775 10.5875C19.8875 10.4625 19.9625 10.3125 19.9875 10.1375C19.9875 10.125 19.9875 10.125 19.9875 10.1125C19.9875 10.1 19.9875 10.1 19.9875 10.0875V10.075C19.9875 10.0625 19.9875 10.0625 19.9875 10.05C19.9875 10.0375 19.9875 10.025 19.9875 10.0125C20 9.9875 20 9.975 20 9.9625ZM19.4625 4.75C19.775 4.525 20 4.175 20 3.75C20 3.0625 19.4375 2.5 18.75 2.5C18.475 2.5 18.2375 2.6 18.0375 2.75L18.025 2.7375L14.6875 5.125C13.825 4.65 12.925 4.2625 11.975 4.0375C10.775 3.75 9.55 3.7375 8.3375 3.975C7.2375 4.2 6.1625 4.65 5.175 5.2125C3.6125 6.0875 2.1875 7.3 0.95 8.65C0.725 8.9 0.4875 9.1625 0.2875 9.425C0 9.7875 0 10.2125 0.275 10.575C0.9125 11.4 1.6625 12.1375 2.4375 12.8125C2.6625 13.0125 2.9125 13.175 3.1375 13.3625L0.525 15.2375L0.5375 15.25C0.225 15.475 0 15.825 0 16.25C0 16.9375 0.5625 17.5 1.25 17.5C1.525 17.5 1.7625 17.4 1.9625 17.25L1.975 17.2625L19.475 4.7625L19.4625 4.75ZM6.45 11C6.3625 10.675 6.3125 10.35 6.3125 10C6.3125 7.95 7.9875 6.275 10.05 6.275C10.825 6.275 11.5375 6.5375 12.125 6.9375L6.45 11Z"
-                                      fill="#8F95B2"
-                                    />
-                                  </svg>
-                                </span>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  id="gridCheck"
-                                />
-                                <label class="form-check-label" for="gridCheck">
-                                  Save my payments details for future purchases
-                                </label>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
+                          </svg>
+                        </span>
                       </div>
                     </div>
-                    <div class="col-lg-4">
-                      <div class="cart_footer">
-                        <div class="promocode">
-                          <h4 class="pcode_header">Order Summary</h4>
-                          <hr />
-                          <div class="subtotal d-flex">
-                            <p class="itemSubtotal">
-                              Angular - The Complete Guide (2020 Edition)
-                            </p>
-                            <span class="price">$ 690.00</span>
-                          </div>
-                          <div class="subtotal d-flex">
-                            <p class="itemSubtotal">
-                              Angular - The Complete Guide (2020 Edition)
-                            </p>
-                            <span class="price">$ 690.00</span>
-                          </div>
-                          <hr />
-                          <div class="subtotal d-flex">
-                            <p class="itemSubtotal">Sub Total</p>
-                            <span class="price">$ 690.00</span>
-                          </div>
-                          <div class="subtotal d-flex">
-                            <p class="itemSubtotal">Discount</p>
-                            <span class="price">$ 690.00</span>
-                          </div>
-                          <div class="subtotal d-flex">
-                            <p class="itemSubtotal">Total</p>
-                            <span class="price">$ 690.00</span>
-                          </div>
-                          <div class="process-btn d-flex">
-                            <a
-                              href="./after-login-home.html"
-                              class="shipping btn btn-outline-success"
-                              >Cancel & Return</a
-                            >
-                            <button
-                              class="btn bg-success text-white"
-                              data-bs-toggle="modal"
-                              data-bs-target="#payment"
-                            >
-                              Pay $500.00
-                            </button>
-                          </div>
+                  </li>
+                  <hr />
+                  <li class="row">
+                    <div class="col-1">
+                      <p class="serial">02</p>
+                    </div>
+                    <div class="col">
+                      <h4 class="certificate-title">
+                        Angular- The complete guide (2022)
+                      </h4>
+                    </div>
+                    <div class="col">
+                      <p class="certificate-date">Enrolled: 24/12/2022</p>
+                    </div>
+                    <div class="col">
+                      <div class="course-progress-bar">
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Success example"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-success"
+                            style="width: 70%"
+                          ></div>
                         </div>
+                        <p class="progress-percent">70%</p>
                       </div>
                     </div>
-                  </div>
-                </div>
+                    <div class="col">
+                      <div class="view_option">
+                        <button class="btn disabled">View Certificate</button>
+                        <span class="dots">
+                          <svg
+                            width="16"
+                            height="5"
+                            viewBox="0 0 16 5"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M4 2.03027C4 3.13484 3.10457 4.03027 2 4.03027C0.895431 4.03027 0 3.13484 0 2.03027C0 0.925704 0.895431 0.0302734 2 0.0302734C3.10457 0.0302734 4 0.925704 4 2.03027ZM16 2.03027C16 3.13484 15.1046 4.03027 14 4.03027C12.8954 4.03027 12 3.13484 12 2.03027C12 0.925704 12.8954 0.0302734 14 0.0302734C15.1046 0.0302734 16 0.925704 16 2.03027ZM8 4.03027C9.10457 4.03027 10 3.13484 10 2.03027C10 0.925704 9.10457 0.0302734 8 0.0302734C6.89543 0.0302734 6 0.925704 6 2.03027C6 3.13484 6.89543 4.03027 8 4.03027Z"
+                              fill="#696F8C"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <hr />
+                  <li class="row">
+                    <div class="col-1">
+                      <p class="serial">03</p>
+                    </div>
+                    <div class="col">
+                      <h4 class="certificate-title">
+                        Date Analytics- Google guide
+                      </h4>
+                    </div>
+                    <div class="col">
+                      <p class="certificate-date">Enrolled: 24/12/2022</p>
+                    </div>
+                    <div class="col">
+                      <div class="course-progress-bar">
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Success example"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-success"
+                            style="width: 70%"
+                          ></div>
+                        </div>
+                        <p class="progress-percent">70%</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="view_option">
+                        <button class="btn disabled">View Certificate</button>
+                        <span class="dots">
+                          <svg
+                            width="16"
+                            height="5"
+                            viewBox="0 0 16 5"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M4 2.03027C4 3.13484 3.10457 4.03027 2 4.03027C0.895431 4.03027 0 3.13484 0 2.03027C0 0.925704 0.895431 0.0302734 2 0.0302734C3.10457 0.0302734 4 0.925704 4 2.03027ZM16 2.03027C16 3.13484 15.1046 4.03027 14 4.03027C12.8954 4.03027 12 3.13484 12 2.03027C12 0.925704 12.8954 0.0302734 14 0.0302734C15.1046 0.0302734 16 0.925704 16 2.03027ZM8 4.03027C9.10457 4.03027 10 3.13484 10 2.03027C10 0.925704 9.10457 0.0302734 8 0.0302734C6.89543 0.0302734 6 0.925704 6 2.03027C6 3.13484 6.89543 4.03027 8 4.03027Z"
+                              fill="#696F8C"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <hr />
+                  <li class="row">
+                    <div class="col-1">
+                      <p class="serial">04</p>
+                    </div>
+                    <div class="col">
+                      <h4 class="certificate-title">
+                        Digital Marketing Course
+                      </h4>
+                    </div>
+                    <div class="col">
+                      <p class="certificate-date">Enrolled: 24/12/2022</p>
+                    </div>
+                    <div class="col">
+                      <div class="course-progress-bar">
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Success example"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-success"
+                            style="width: 70%"
+                          ></div>
+                        </div>
+                        <p class="progress-percent">70%</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="view_option">
+                        <button class="btn disabled">View Certificate</button>
+                        <span class="dots">
+                          <svg
+                            width="16"
+                            height="5"
+                            viewBox="0 0 16 5"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M4 2.03027C4 3.13484 3.10457 4.03027 2 4.03027C0.895431 4.03027 0 3.13484 0 2.03027C0 0.925704 0.895431 0.0302734 2 0.0302734C3.10457 0.0302734 4 0.925704 4 2.03027ZM16 2.03027C16 3.13484 15.1046 4.03027 14 4.03027C12.8954 4.03027 12 3.13484 12 2.03027C12 0.925704 12.8954 0.0302734 14 0.0302734C15.1046 0.0302734 16 0.925704 16 2.03027ZM8 4.03027C9.10457 4.03027 10 3.13484 10 2.03027C10 0.925704 9.10457 0.0302734 8 0.0302734C6.89543 0.0302734 6 0.925704 6 2.03027C6 3.13484 6.89543 4.03027 8 4.03027Z"
+                              fill="#696F8C"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <hr />
+                  <li class="row">
+                    <div class="col-1">
+                      <p class="serial">05</p>
+                    </div>
+                    <div class="col">
+                      <h4 class="certificate-title">
+                        Premium Pro Video Editing Course
+                      </h4>
+                    </div>
+                    <div class="col">
+                      <p class="certificate-date">Enrolled: 24/12/2022</p>
+                    </div>
+                    <div class="col">
+                      <div class="course-progress-bar">
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Success example"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar bg-success"
+                            style="width: 15%"
+                          ></div>
+                        </div>
+                        <p class="progress-percent">15%</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="view_option">
+                        <button class="btn disabled">View Certificate</button>
+                        <span class="dots">
+                          <svg
+                            width="16"
+                            height="5"
+                            viewBox="0 0 16 5"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M4 2.03027C4 3.13484 3.10457 4.03027 2 4.03027C0.895431 4.03027 0 3.13484 0 2.03027C0 0.925704 0.895431 0.0302734 2 0.0302734C3.10457 0.0302734 4 0.925704 4 2.03027ZM16 2.03027C16 3.13484 15.1046 4.03027 14 4.03027C12.8954 4.03027 12 3.13484 12 2.03027C12 0.925704 12.8954 0.0302734 14 0.0302734C15.1046 0.0302734 16 0.925704 16 2.03027ZM8 4.03027C9.10457 4.03027 10 3.13484 10 2.03027C10 0.925704 9.10457 0.0302734 8 0.0302734C6.89543 0.0302734 6 0.925704 6 2.03027C6 3.13484 6.89543 4.03027 8 4.03027Z"
+                              fill="#696F8C"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <hr />
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Checkout List -->
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <img
+                class="img-fluid logo"
+                src="./../assets/images/logo/logo.png"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-4 col-12">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="text"
+                  placeholder="Enter your email"
+                  aria-label="Search"
+                />
+                <button class="btn bg-success text-white" type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <hr class="mt-3" />
+          </div>
+        </div>
+        <div class="container py-3">
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <ul>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+                <li>
+                  <a href="#">Jobs</a>
+                </li>
+                <li>
+                  <a href="#">In Press</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6">
+              <ul>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+                <li>
+                  <a href="#">Online Chat</a>
+                </li>
+                <li>
+                  <a href="#">Whatsapp</a>
+                </li>
+                <li>
+                  <a href="#">Telegram</a>
+                </li>
+                <li>
+                  <a href="#">Ticketing</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6">
+              <ul>
+                <li>
+                  <a href="#">Terms</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Cookies Settings</a>
+                </li>
+                <li>
+                  <a href="#">Sitemap</a>
+                </li>
+                <li>
+                  <a href="#">Accessibility Statement</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6">
+              <ul>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>
+                  <a href="#">Account</a>
+                </li>
+                <li>
+                  <a href="#">Manage Deliveries</a>
+                </li>
+                <li>
+                  <a href="#">Orders</a>
+                </li>
+                <li>
+                  <a href="#">Payments</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tiny_footer bg-primary-subtle">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-12">
+                <ul class="d-flex gap-4">
+                  <li>
+                    <a href="#">About us</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Sitemap</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms of Use</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-12">
+                <p class="text-end">© 2000-2021, All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
     </div>
 
     <!-- scroll top -->
@@ -689,72 +884,33 @@
     </button>
     <!-- scroll top -->
 
-    <!-- Register Modal -->
+    <!-- viewCertificate Modal -->
     <div
       class="modal fade"
-      id="payment"
+      id="viewCertificate"
       tabindex="-1"
-      aria-labelledby="paymentLabel"
+      aria-labelledby="viewCertificateLabel"
       aria-hidden="true"
     >
       <div
-        class="modal-dialog modal-dialog-centered modal-dialog-scrollable payment-modal"
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable login-modal"
       >
         <div class="modal-content">
-          <!-- <div class="modal-header">
+          <div class="modal-header">
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
-          </div> -->
+          </div>
           <div class="modal-body">
-            <div class="payment_img">
+            <div class="img">
               <img
-                src="./../assets/images/payment/success.svg"
-                alt=""
                 class="img-fluid"
+                src="./../assets/images/my-certificate/certificate.png"
+                alt=""
               />
-            </div>
-            <h4>Payment Successful</h4>
-            <p>
-              Your payment has been processed! <br />
-              Details of the transaction has been included below
-            </p>
-            <div class="payment-details">
-              <div class="payment-details-item">
-                <p>Amount</p>
-                <span>$500.00</span>
-              </div>
-              <div class="payment-details-item">
-                <p>Transaction ID</p>
-                <span>#745458S5D4</span>
-              </div>
-              <div class="payment-details-item">
-                <p>Payment Type</p>
-                <span>Debit Card</span>
-              </div>
-            </div>
-            <div class="payment-btn">
-              <a class="btn bg-success text-white" href="#">Ok</a>
-              <button class="btn btn-outline-success">
-                <span>
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.9997 2H3.99967V4.66667H11.9997V2ZM12.6663 8C12.4895 8 12.32 7.92976 12.1949 7.80474C12.0699 7.67971 11.9997 7.51014 11.9997 7.33333C11.9997 7.15652 12.0699 6.98695 12.1949 6.86193C12.32 6.7369 12.4895 6.66667 12.6663 6.66667C12.8432 6.66667 13.0127 6.7369 13.1377 6.86193C13.2628 6.98695 13.333 7.15652 13.333 7.33333C13.333 7.51014 13.2628 7.67971 13.1377 7.80474C13.0127 7.92976 12.8432 8 12.6663 8ZM10.6663 12.6667H5.33301V9.33333H10.6663V12.6667ZM12.6663 5.33333H3.33301C2.80257 5.33333 2.29387 5.54405 1.91879 5.91912C1.54372 6.29419 1.33301 6.8029 1.33301 7.33333V11.3333H3.99967V14H11.9997V11.3333H14.6663V7.33333C14.6663 6.8029 14.4556 6.29419 14.0806 5.91912C13.7055 5.54405 13.1968 5.33333 12.6663 5.33333Z"
-                      fill="#429777"
-                    />
-                  </svg>
-                </span>
-                Print Invoice
-              </button>
             </div>
           </div>
         </div>

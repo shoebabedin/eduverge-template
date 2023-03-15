@@ -42,6 +42,10 @@
 @import url("./course-categories-details.css");
 /* Theme Css view-cart */
 @import url("./checkout-list.css");
+/* Theme Css my-courses */
+@import url("./my-courses.css");
+/* Theme Css my-certification */
+@import url("./my-certification.css");
 
 /* old css */
 /* Theme Css single-product */
