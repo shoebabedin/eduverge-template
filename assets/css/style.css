@@ -36,16 +36,22 @@
 @import url("./footer.css");
 /* Theme Css reset-password */
 @import url("./reset-password.css");
-/* Theme Css all-products */
+/* Theme Css course-categories */
 @import url("./course-categories.css");
-/* Theme Css all-products-details */
+/* Theme Css course-categories-details */
 @import url("./course-categories-details.css");
+/* Theme Css course-categories-details */
+@import url("./after-course-categories-details.css");
 /* Theme Css view-cart */
 @import url("./checkout-list.css");
 /* Theme Css my-courses */
 @import url("./my-courses.css");
 /* Theme Css my-certification */
 @import url("./my-certification.css");
+/* Theme Css purchase-details-course-page */
+@import url("./purchase-details-course-page.css");
+/* Theme Css larner-profile */
+@import url("./larner-profile.css");
 
 /* old css */
 /* Theme Css single-product */

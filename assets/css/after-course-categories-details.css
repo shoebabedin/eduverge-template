@@ -1,0 +1,55 @@
+.add-review .review-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #474d66;
+}
+.add-review .put-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-review .wrapper .form-label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #474d66;
+}
+.add-review .wrapper textarea {
+  border: 1px solid #8f95b2;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #8f95b2;
+  padding: 16px 16px;
+}
+.add-review .wrapper #the-count {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.5px;
+  color: #474d66;
+}
+
+.add-review .btn,
+.add-review .btn.active {
+  background-color: #52bd94 !important;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}

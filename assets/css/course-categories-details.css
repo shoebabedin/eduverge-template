@@ -99,6 +99,7 @@
   justify-content: flex-start;
   padding-left: 0;
   gap: 1.5px;
+  margin-bottom: 0;
 }
 .coursedetails .course-details-section .instructor-details .star i {
   color: #ffc107;
@@ -410,6 +411,12 @@
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 16px;
+  border: 0.666667px solid #c1c4d6;
+  border-radius: 2.66667px;
+}
+.coursedetails .sidebar-item .img img {
+  width: 100%;
+  height: 100%;
 }
 .coursedetails .sidebar-item .price {
   font-weight: 700;
@@ -497,6 +504,25 @@
   padding: 0px;
   gap: 16px;
 }
+.coursedetails .payment-support .payment-img .img {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  border: 0.666667px solid #c1c4d6;
+  border-radius: 2.66667px;
+  min-width: 60.67px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coursedetails .payment-support .payment-img .img img {
+  max-width: 60.67px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
 .coursedetails .tags h4 {
   font-weight: 600;
   font-size: 16px;
@@ -513,12 +539,12 @@
   gap: 16px;
 }
 .coursedetails .tags .tag-items li a {
-  background: #edeff5;
+  background: #DCF2EA;
   border-radius: 4px;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
-  color: #474d66;
+  color: #317159;
   padding: 4px 12px;
 }
 

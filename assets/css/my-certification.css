@@ -112,17 +112,118 @@
 }
 .my-certification-modal ul li .view_option .dots {
   cursor: pointer;
+  position: relative;
+}
+.my-certification-modal ul li .view_option .dots .dropdown-div {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transform: translate(10%, 10%);
+  -webkit-transform: translate(10%, 10%);
+  -moz-transform: translate(10%, 10%);
+  -ms-transform: translate(10%, 10%);
+  -o-transform: translate(10%, 10%);
+}
+.my-certification-modal ul li .view_option .dots .dropdown-div::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  clip-path: polygon(50% 60%, 0% 100%, 100% 100%);
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  filter: drop-shadow(0px 4px 8px rgba(16, 24, 64, 0.16));
+}
+.my-certification-modal ul li .view_option .dots:hover .dropdown-div {
+  visibility: visible;
+  opacity: 1;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.my-certification-modal ul li .view_option .dots .dropdown-div ul {
+  margin-top: 0px;
+  background: #ffffff;
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 8px rgba(16, 24, 64, 0.16));
+  padding: 8px 8px;
+}
+.my-certification-modal ul li .view_option .dots .dropdown-div li a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #474d66;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 11px;
+  padding: 6px 9px;
+  background: transparent;
+  border-radius: 2px;
+  margin-bottom: 4px;
+  width: 100%;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.my-certification-modal ul li .view_option .dots .dropdown-div li:hover a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #474d66;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 11px;
+  padding: 6px 9px;
+  background: #eef8f4;
+  border-radius: 2px;
+  margin-bottom: 4px;
+  width: 100%;
+  transition: all linear 0.3s;
+}
+.my-certification-modal ul li .view_option .dots .dropdown-div li:last-child a {
+  margin-bottom: 0px;
 }
 
-.my-certification-modal ul li {
+/* empty state */
+
+.my-certification-modal .certificate-empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 64px;
+  margin-top: 64px;
+  padding-bottom: 207px;
 }
-.my-certification-modal ul li {
+.my-certification-modal .certificate-empty-state p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #101840;
 }
-.my-certification-modal ul li {
+.my-certification-modal .certificate-empty-state {
 }
-.my-certification-modal ul li {
+.my-certification-modal .certificate-empty-state {
 }
-.my-certification-modal {
+.my-certification-modal .certificate-empty-state {
 }
 .my-certification-modal {
 }
