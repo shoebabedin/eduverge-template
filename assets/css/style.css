@@ -52,6 +52,10 @@
 @import url("./purchase-details-course-page.css");
 /* Theme Css larner-profile */
 @import url("./larner-profile.css");
+/* Theme Css instructor-profile */
+@import url("./instructor-profile.css");
+/* Theme Css profile-settings */
+@import url("./profile-settings.css");
 
 /* old css */
 /* Theme Css single-product */
@@ -68,8 +72,7 @@
 @import url("./4O4.css");
 /* Theme Css about */
 @import url("./about.css");
-/* Theme Css about */
-@import url("./profile.css");
+
 /* Theme Css media-query */
 /* @import url("./media-query.css"); */
 
