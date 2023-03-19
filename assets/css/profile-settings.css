@@ -1,0 +1,180 @@
+.profile-settings .larner-user-img-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.profile-settings .larner-user-img-name .larner-user-img {
+  max-width: 116px;
+  max-height: 116px;
+  min-width: 116px;
+  min-height: 116px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.profile-settings .larner-user-img-name .larner-user-img img {
+  max-width: 116px;
+  max-height: 116px;
+  min-width: 116px;
+  min-height: 116px;
+}
+.profile-settings .larner-user-img-name .larner-user-img .larner-user-img-edit {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  width: 29px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6.91983px);
+  border-radius: 2.76793px;
+}
+
+.profile-settings .larner-profile-menu {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.profile-settings .larner-profile-menu li a {
+  background: rgba(245, 251, 248, 0);
+  border-left: 3px solid rgba(49, 113, 90, 0);
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 16px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  color: #101840;
+}
+.profile-settings .larner-profile-menu li.active a {
+  background: #f5fbf8;
+  border-left: 3px solid #317159;
+  color: #317159;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 16px;
+  width: 100%;
+}
+.profile-settings .larner-profile-menu li.active a svg path {
+  fill: #317159;
+}
+.profile-settings .profile-settings-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: left;
+  color: #474d66;
+}
+.profile-settings .profile-settings-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #474d66;
+}
+.profile-settings .basic-info .basic-info-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #474d66;
+}
+.profile-settings .form-label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #101840;
+}
+.profile-settings .form-control {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #474d66;
+}
+.profile-settings #the-count {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.5px;
+  color: #474d66;
+}
+
+.profile-settings form .submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+.profile-settings form .btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  width: 148px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.profile-settings form .btn.cancel {
+  border: 1px solid #429777;
+  color: #429777;
+}
+.profile-settings form .btn.save {
+  background-color: #52bd94 !important;
+  color: #ffffff;
+}
+.profile-settings form .eye {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+/* The message box is shown when the user clicks on the password field */
+.profile-settings #message {
+  padding: 8px 0;
+}
+
+.profile-settings #message p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #696f8c;
+  position: relative;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+
+.profile-settings .valid:before {
+  position: absolute;
+  right: 0;
+  content: "✔";
+  color: green;
+}
+
+.profile-settings .invalid:before {
+  position: absolute;
+  right: 0;
+  content: "✖";
+  color: red;
+}

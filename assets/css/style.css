@@ -56,6 +56,14 @@
 @import url("./instructor-profile.css");
 /* Theme Css profile-settings */
 @import url("./profile-settings.css");
+/* Theme Css profile-settings */
+@import url("./notification-settings.css");
+/* Theme Css payment-method */
+@import url("./payment-method.css");
+/* Theme Css removed-account */
+@import url("./removed-account.css");
+/* Theme Css order-history */
+@import url("./order-history.css");
 
 /* old css */
 /* Theme Css single-product */

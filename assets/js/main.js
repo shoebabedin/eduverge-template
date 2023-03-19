@@ -328,3 +328,44 @@ $('textarea').keyup(function() {
   
       
 });
+
+
+// profile add
+
+$('.profile-desc').keyup(function() {
+  var characterCount = $(this).val().length,
+      current = $('#current'),
+      maximum = $('#maximum'),
+      theCount = $('#the-count');
+    
+  current.text(characterCount);
+ 
+  
+  /*This isn't entirely necessary, just playin around*/
+  if (characterCount < 130) {
+    current.css('color', '#666');
+  }
+  if (characterCount > 130 && characterCount < 170) {
+    current.css('color', '#6d5555');
+  }
+  if (characterCount > 170 && characterCount < 230) {
+    current.css('color', '#793535');
+  }
+  if (characterCount > 230 && characterCount < 280) {
+    current.css('color', '#841c1c');
+  }
+  if (characterCount > 320 && characterCount < 380) {
+    current.css('color', '#8f0001');
+  }
+  
+  if (characterCount >= 400) {
+    maximum.css('color', '#8f0001');
+    current.css('color', '#8f0001');
+    theCount.css('font-weight','bold');
+  } else {
+    maximum.css('color','#666');
+    theCount.css('font-weight','normal');
+  }
+  
+      
+});

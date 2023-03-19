@@ -1,0 +1,65 @@
+.payment-method .payment-method-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.payment-method .payment-method-header h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #4a4a4a;
+}
+.payment-method .payment-method-header .add-card {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  background: #52bd94 !important;
+  border-radius: 4px;
+}
+.payment-method .payment-method-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.payment-method .payment-method-items .card-icon-number {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.payment-method .payment-method-items .card-icon-number .card-icon {
+  min-width: 58px;
+  min-height: 58px;
+  max-width: 58px;
+  max-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payment-method .payment-method-items .card-icon-number .card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.payment-method .payment-method-items .card-icon-number .card-number {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #4a4a4a;
+  margin-bottom: 0;
+}
+.payment-method .payment-method-items .btn {
+  border: 1px solid #429777;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #429777;
+}

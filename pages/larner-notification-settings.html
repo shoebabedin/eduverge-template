@@ -496,10 +496,18 @@
                     class="img-fluid"
                   />
                   <span class="larner-user-img-edit">
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.0761719 9.93622V12.5312H2.67111L10.3244 4.87782L7.72951 2.28289L0.0761719 9.93622ZM12.3312 2.87107C12.6011 2.6012 12.6011 2.16525 12.3312 1.89538L10.712 0.276136C10.4421 0.00626212 10.0061 0.00626212 9.73626 0.276136L8.46993 1.54246L11.0649 4.1374L12.3312 2.87107Z" fill="white"/>
-                      </svg>
-                      
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.0761719 9.93622V12.5312H2.67111L10.3244 4.87782L7.72951 2.28289L0.0761719 9.93622ZM12.3312 2.87107C12.6011 2.6012 12.6011 2.16525 12.3312 1.89538L10.712 0.276136C10.4421 0.00626212 10.0061 0.00626212 9.73626 0.276136L8.46993 1.54246L11.0649 4.1374L12.3312 2.87107Z"
+                        fill="white"
+                      />
+                    </svg>
                   </span>
                 </div>
                 <div class="larner-user-name">
@@ -508,7 +516,7 @@
                 </div>
               </div>
               <ul class="larner-profile-menu">
-                <li class="active">
+                <li>
                   <a href="#"
                     ><span
                       ><svg
@@ -535,7 +543,7 @@
                     Profile Settings</a
                   >
                 </li>
-                <li>
+                <li >
                   <a href="#"
                     ><span
                       ><svg
@@ -554,7 +562,7 @@
                     Change Password</a
                   >
                 </li>
-                <li>
+                <li class="active">
                   <a href="#"
                     ><span
                       ><svg
@@ -614,92 +622,285 @@
               </ul>
             </div>
             <div class="col-lg-7">
-              <h2 class="profile-settings-title">Profile Setting</h2>
+              <h2 class="profile-settings-title">Notification Settings</h2>
               <p class="profile-settings-desc">
-                We do not sell or, share your details without prior notice. Find
-                out more on our Privacy Policy
+                We may still send you important notification about your account
+                outside of your notification settings.
               </p>
-              <div class="basic-info">
-                <h2 class="basic-info-title">Basic Info</h2>
-                <hr />
-                <form action="#" class="row">
-                  <div class="col-lg-6 mb-3">
-                    <label for="firstName" class="form-label">First Name</label>
-                    <input
-                      value="Abul"
-                      type="text"
-                      id="firstName"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="col-lg-6 mb-3">
-                    <label for="lastName" class="form-label">Last Name</label>
-                    <input
-                      value="Hasan"
-                      type="text"
-                      id="lastName"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="col-12 mb-3">
-                    <label for="profile-textarea" class="form-label"
-                      >Bio Description</label
-                    >
-                    <textarea
-                      class="form-control profile-desc"
-                      name="the-textarea"
-                      id="profile-textarea"
-                      maxlength="500"
-                      rows="3"
-                      placeholder="Write your comments"
-                      autofocus
-                    >
-I am Abul Hasan. I am a UI/UX Designer. I have working in this industry since 2021. In this industry there are so many works. I have done successfully. I have a experience to work on various projects...
-                  </textarea
-                    >
-                    <div
-                      id="the-count"
-                      class="d-flex align-items-center justify-content-end"
-                    >
-                      <span id="current">450</span>
-                      <span id="maximum">/ 500</span>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 mb-3">
-                    <label for="firstName" class="form-label">Job Title</label>
-                    <input
-                      value="UI/UX Designer"
-                      type="text"
-                      id="firstName"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="col-lg-6 mb-3">
-                    <label for="gender" class="form-label">Gender</label>
-                    <select name="" id="gender" class="form-control">
-                      <option value="male">Male</option>
-                      <option value="female">Female</option>
-                    </select>
-                  </div>
-                  <div class="col-lg-6 mb-3">
-                    <label for="country" class="form-label">Country</label>
-                    <select name="" id="country" class="form-control">
-                      <option value="canada">Canada</option>
-                      <option value="bangladesh">Bangladesh</option>
-                    </select>
-                  </div>
-                  <div class="col-lg-6 mb-3">
-                    <label for="city" class="form-label">City</label>
-                    <select name="" id="city" class="form-control">
-                      <option value="toronto">Toronto</option>
-                      <option value="dhaka">Dhaka</option>
-                    </select>
-                  </div>
-                  <div class="col-12 submit-btn">
-                    <button class="btn cancel">Cancel</button
-                    ><button class="btn save">Save</button>
-                  </div>
-                </form>
+              <div class="notification-settings">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Notification type</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Mobile</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">
+                        <h4>Rating Reminders</h4>
+                        <p>
+                          Send an reminding notifications me to rate an course a
+                          week after purchase
+                        </p>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">
+                        <h4>Course comment notification</h4>
+                        <p>Notify when comment will put on course</p>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">
+                        <h4>Course Review Notification</h4>
+                        <p>
+                          Send me an notification when my courses are approved
+                          or rejected
+                        </p>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">
+                        <h4>Course Update Notification</h4>
+                        <p>
+                          Send me an notification when my courses will be
+                          updated from any instructor
+                        </p>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">
+                        <h4>Promotional Offers</h4>
+                        <p>
+                          Send me an notification for Coupon Codes, freebies,
+                          newsletter, course recommendations and resources from
+                          Eduverge
+                        </p>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">
+                        <h4>Course Purchase</h4>
+                        <p>
+                          Send me an notification for specific purchase course
+                        </p>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">
+                        <h4>Earnings Notifications</h4>
+                        <p>
+                          Send me an notification for specific earnings from
+                          selling of course and any type of transaction.
+                        </p>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">
+                        <h4>Policy or, System Update Notifications</h4>
+                        <p>
+                          Send me an notification when any policy of Eduverge is
+                          changed and notifications about my account, security
+                          and privacy
+                        </p>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+
+                      <td>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -1534,5 +1735,55 @@ I am Abul Hasan. I am a UI/UX Designer. I have working in this industry since 20
       src="./../assets/js/swiper-bundle.min.js"
     ></script>
     <script type="text/javascript" src="./../assets/js/main.js"></script>
+
+    <script>
+      var myInput = document.getElementById("psw");
+      var letter = document.getElementById("letter");
+      var capital = document.getElementById("capital");
+      var number = document.getElementById("number");
+      var length = document.getElementById("length");
+
+      // When the user starts to type something inside the password field
+      myInput.onkeyup = function () {
+        // Validate lowercase letters
+        var lowerCaseLetters = /[a-z]/g;
+        if (myInput.value.match(lowerCaseLetters)) {
+          letter.classList.remove("invalid");
+          letter.classList.add("valid");
+        } else {
+          letter.classList.remove("valid");
+          letter.classList.add("invalid");
+        }
+
+        // Validate capital letters
+        var upperCaseLetters = /[A-Z]/g;
+        if (myInput.value.match(upperCaseLetters)) {
+          capital.classList.remove("invalid");
+          capital.classList.add("valid");
+        } else {
+          capital.classList.remove("valid");
+          capital.classList.add("invalid");
+        }
+
+        // Validate numbers
+        var numbers = /[0-9]/g;
+        if (myInput.value.match(numbers)) {
+          number.classList.remove("invalid");
+          number.classList.add("valid");
+        } else {
+          number.classList.remove("valid");
+          number.classList.add("invalid");
+        }
+
+        // Validate length
+        if (myInput.value.length >= 8) {
+          length.classList.remove("invalid");
+          length.classList.add("valid");
+        } else {
+          length.classList.remove("valid");
+          length.classList.add("invalid");
+        }
+      };
+    </script>
   </body>
 </html>
