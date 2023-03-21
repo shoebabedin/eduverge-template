@@ -37,175 +37,120 @@
 .order-history .order-history-tabs {
   margin-top: 28px;
 }
+.order-history .order-history-tabs .nav {
+  border-bottom: 1px solid #c1c4d6;
+  margin-bottom: 42px;
+}
+.order-history .order-history-tabs .nav .nav-item .nav-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #696f8c;
+}
+.order-history .order-history-tabs .nav .nav-item .nav-link.active {
+  border: 0px;
+  box-shadow: none;
+  position: relative;
+  color: #000000;
+}
+.order-history .order-history-tabs .nav .nav-item .nav-link:hover {
+  border-color: transparent;
+}
+.order-history .order-history-tabs .nav .nav-item .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4%;
+  left: 0;
+  border-bottom: 1px solid #101840;
+  width: 100%;
+}
+.order-history .order-history-tabs .tab-content .table thead th {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #696f8c;
+}
 
+.order-history .order-history-tabs .tab-content .table tbody tr {
+  vertical-align: middle;
+}
+.order-history .order-history-tabs .tab-content .table tbody th {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #696f8c;
+}
+.order-history .order-history-tabs .tab-content .table tbody td .data-img {
+  max-width: 99px;
+  max-height: 64px;
+  margin-right: 16px;
+}
+.order-history .order-history-tabs .tab-content .table tbody td .data-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.order-history .order-history-tabs .tab-content .table tbody td p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #474d66;
+  margin-bottom: 0;
+}
+.order-history .order-history-tabs .tab-content .table tbody td {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #696f8c;
+}
+.order-history .pagination {
+  margin-top: 40px;
+  gap: 4px;
+}
 .order-history .pagination a:hover:not(.active) {
   background-color: #ddd;
 }
-.order-history .order-history-tabs {
-}
-.order-history .order-history-tabs {
-}
-.order-history .order-history-tabs {
-}
-.order-history .order-history-tabs {
-}
-.order-history .order-history-tabs {
-}
-.order-history .order-history-tabs {
-}
-.order-history .order-history-tabs {
-}
-.order-history .order-history-tabs {
-}
-.order-history .order-history-tabs {
-}
-.order-history .order-history-tabs {
-}
-.order-history .order-history-tabs {
-}
-.order-history .order-history-tabs {
-}
-.order-history .order-history-tabs {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
-}
-.order-history {
+.order-history .pagination .page-item:first-child .page-link,
+.order-history .pagination .page-item:last-child .page-link {
+  background-color: transparent;
+}
+.order-history .pagination .page-item .page-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #474d66;
+  background: transparent;
+  border-radius: 3px;
+  border: 0;
+  width: 31px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-history .pagination .page-item.active .page-link {
+  color: #429777;
+  background: #dcf2ea;
+}
+.order-history .pagination .page-item .page-link:hover {
+  color: #429777;
+  background: #dcf2ea;
+}
+/* empty-state-div */
+.empty-state-div tr td {
+  border-bottom-width: 0px;
+}
+.empty-state-div .empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 64px;
+  padding: 96px 0;
 }

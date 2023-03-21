@@ -1,0 +1,392 @@
+.order-history .avaiable-balance {
+  text-align: center;
+  padding-bottom: 90px;
+}
+.order-history .avaiable-balance p {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #101840;
+}
+.order-history .avaiable-balance p span {
+  color: #429777;
+}
+.order-history .avaiable-balance .btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  background: #52bd94 !important;
+  border-radius: 4px;
+  padding: 12px 48px;
+  margin-top: 12px;
+}
+.order-history .form-floating > .form-select {
+  padding: 12px 48px 12px 24px;
+  border: 1px solid #429777;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #429777;
+  --bs-form-select-bg-img: url("./../images/my-courses/shape.png");
+  background-position: right 1rem center;
+  background-size: 8px 5px;
+  cursor: pointer;
+}
+
+/* withdraw-found */
+#withdrawFound .modal-dialog {
+  --bs-modal-width: 928px;
+  --bs-modal-border-radius: 12px;
+}
+#withdrawFound .modal-body {
+  padding: 0;
+}
+#withdrawFound .withdraw-found .withdraw-found-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #429777;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px;
+}
+#withdrawFound .withdraw-found .withdraw-found-body {
+  padding: 40px 48px;
+}
+#withdrawFound .withdraw-found .withdraw-found-body .withdraw-avaiable-balance {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #101840;
+}
+#withdrawFound .withdraw-found .withdraw-found-body .withdraw-price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #429777;
+}
+#withdrawFound .withdraw-found .withdraw-found-body .withdraw-payment-method p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #101840;
+  margin-bottom: 8px;
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-method
+  .form-floating
+  .form-select {
+  padding: 12px 21px 12px 16px;
+  margin-bottom: 24px;
+}
+
+#withdrawFound .withdraw-found .withdraw-found-body .withdraw-payment-amount p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #101840;
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  .form-check {
+  padding-left: 0;
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  .form-check-input {
+  border-color: #474d66;
+  background-color: #fff;
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  [type="radio"]:checked,
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  [type="radio"]:checked
+  + label,
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  [type="radio"]:not(:checked)
+  + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  [type="radio"]:checked
+  + label:before,
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  [type="radio"]:not(:checked)
+  + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  [type="radio"]:checked
+  + label:after,
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  [type="radio"]:not(:checked)
+  + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #474d66;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  [type="radio"]:not(:checked)
+  + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  [type="radio"]:checked
+  + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #696f8c;
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  label
+  .minimum-amount {
+  color: #d14343;
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  #ifYes {
+  margin: 10px 0;
+  max-width: 216px;
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .withdraw-payment-amount
+  #ifYes
+  input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #474d66;
+  padding: 16px 16px;
+}
+
+#withdrawFound .withdraw-found .withdraw-found-body .table td h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #101840;
+}
+#withdrawFound .withdraw-found .withdraw-found-body .table td p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #696f8c;
+  margin-bottom: 0;
+}
+#withdrawFound .withdraw-found .withdraw-found-body .table td {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #101840;
+}
+#withdrawFound
+  .withdraw-found
+  .withdraw-found-body
+  .table
+  > :not(caption)
+  > *
+  > * {
+  border-bottom-width: 0;
+}
+
+#withdrawFound .withdraw-found .withdraw-found-body .total {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #474d66;
+  margin-bottom: 0;
+}
+#withdrawFound .withdraw-found .withdraw-found-body .withdraw-btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  background: #52bd94 !important;
+  border-radius: 4px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+/* withdraw-found */
+
+/* paymentSent */
+#paymentSent {
+}
+#paymentSent .modal-dialog {
+  --bs-modal-width: 928px;
+  --bs-modal-border-radius: 12px;
+}
+
+#paymentSent .modal-body {
+  padding: 47px 103px 40px;
+}
+
+#paymentSent .payment-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#paymentSent .payment-success .payment-success-img {
+  max-width: 86px;
+  max-height: 86px;
+  margin-bottom: 23px;
+}
+#paymentSent .payment-success .payment-success-img img {
+  width: 100%;
+  height: 100%;
+}
+#paymentSent .payment-success .payment-success-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #429777;
+}
+#paymentSent .payment-success .payment-success-process {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #696f8c;
+}
+#paymentSent .payment-success .payment-table {
+  background: #ffffff;
+  border-top: 8px solid #429777;
+  box-shadow: 0px 4px 10px rgba(112, 128, 176, 0.1);
+  border-radius: 8px;
+  max-width: 477px;
+  width: 100%;
+  padding-left: 0;
+  margin-bottom: 24px;
+}
+#paymentSent .payment-success .payment-table li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #474d66;
+}
+
+#paymentSent .payment-success .btn {
+  background: #52bd94 !important;
+  border-radius: 4px;
+  max-width: 161px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* multiple item select from dropdown */

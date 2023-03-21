@@ -466,11 +466,11 @@
                     <a href="#">Home </a>
                   </li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    <a href="#">Order History</a>
+                    <a href="#">Withdraw</a>
                   </li>
                 </ol>
               </nav>
-              <h2 class="heading">Order History</h2>
+              <h2 class="heading">Withdraw Earnings</h2>
             </div>
             <div class="col-lg-3">
               <img
@@ -487,32 +487,33 @@
       <div class="order-history">
         <div class="container">
           <div class="row">
+            <div class="col-12">
+              <div class="avaiable-balance">
+                <p>Available Balance: <span>$50.00 USD</span></p>
+                <button
+                  class="btn withdraw"
+                  data-bs-toggle="modal"
+                  data-bs-target="#withdrawFound"
+                >
+                  Withdraw
+                </button>
+              </div>
+            </div>
             <div class="col-lg-12">
               <div class="order-history-header">
-                <h4 class="order-history-title">Order History</h4>
-                <form class="search-form position-relative">
-                  <input
-                    class="form-control"
-                    type="search"
-                    name=""
-                    id=""
-                    placeholder="Search Course"
-                  />
-                  <span class="search">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.9167 11.6667H12.2583L12.025 11.4417C12.8417 10.4917 13.3333 9.25833 13.3333 7.91667C13.3333 4.925 10.9083 2.5 7.91667 2.5C4.925 2.5 2.5 4.925 2.5 7.91667C2.5 10.9083 4.925 13.3333 7.91667 13.3333C9.25833 13.3333 10.4917 12.8417 11.4417 12.025L11.6667 12.2583V12.9167L15.8333 17.075L17.075 15.8333L12.9167 11.6667ZM7.91667 11.6667C5.84167 11.6667 4.16667 9.99167 4.16667 7.91667C4.16667 5.84167 5.84167 4.16667 7.91667 4.16667C9.99167 4.16667 11.6667 5.84167 11.6667 7.91667C11.6667 9.99167 9.99167 11.6667 7.91667 11.6667Z"
-                        fill="#696F8C"
-                      />
-                    </svg>
-                  </span>
-                </form>
+                <h4 class="order-history-title">Withdrawal History</h4>
+                <div class="form-floating">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>This Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                  </select>
+                </div>
               </div>
               <div class="order-history-tabs">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -555,7 +556,7 @@
                       aria-controls="contact-tab-pane"
                       aria-selected="false"
                     >
-                      Refund
+                      Pending
                     </button>
                   </li>
                 </ul>
@@ -571,8 +572,8 @@
                       <thead>
                         <tr>
                           <th scope="col">No</th>
-                          <th scope="col">Course Title</th>
-                          <th scope="col">Enroll Date</th>
+                          <th scope="col">Transaction ID</th>
+                          <th scope="col">Date</th>
                           <th scope="col">Status</th>
                           <th scope="col">Payment By</th>
                           <th scope="col">Amount</th>
@@ -581,18 +582,7 @@
                       <tbody>
                         <tr>
                           <th scope="row">01</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img1.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>UI/UX Design Golden Course</p>
-                          </td>
+                          <td>#125B51SD2</td>
                           <td>24/12/2022</td>
                           <td>Paid</td>
                           <td>Paypal</td>
@@ -600,155 +590,27 @@
                         </tr>
                         <tr>
                           <th scope="row">02</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img2.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Graphics Design Advance Course</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
+                          <td>#125B51SD2</td>
+                          <td>15/12/2022</td>
+                          <td>Pending</td>
                           <td>Paypal</td>
                           <td>$ 508.00</td>
                         </tr>
                         <tr>
                           <th scope="row">03</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img3.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Digital Marketing Course 2022</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
+                          <td>#125B51SD2</td>
+                          <td>15/12/2022</td>
+                          <td>Pending</td>
                           <td>Paypal</td>
-                          <td>$ 425.00</td>
+                          <td>$ 158.00</td>
                         </tr>
                         <tr>
                           <th scope="row">04</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img4.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Learn Linux in 5 Days and Level Up</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
+                          <td>#125B51SD2</td>
+                          <td>15/12/2022</td>
+                          <td>Pending</td>
                           <td>Paypal</td>
-                          <td>$ 312.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">05</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img5.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Web Design for Beginners</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 415.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">06</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img6.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Web Design for Beginners</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 415.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">07</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img7.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Become a UX Designer | Learn the Skills</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 345.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">08</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img8.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Build Responsive Real-World Website</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 648.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">09</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img9.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>The Complete 2023 Web Development</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 299.00</td>
+                          <td>$ 500.00</td>
                         </tr>
                       </tbody>
                     </table>
@@ -825,8 +687,8 @@
                       <thead>
                         <tr>
                           <th scope="col">No</th>
-                          <th scope="col">Course Title</th>
-                          <th scope="col">Enroll Date</th>
+                          <th scope="col">Transaction ID</th>
+                          <th scope="col">Date</th>
                           <th scope="col">Status</th>
                           <th scope="col">Payment By</th>
                           <th scope="col">Amount</th>
@@ -835,18 +697,7 @@
                       <tbody>
                         <tr>
                           <th scope="row">01</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img1.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>UI/UX Design Golden Course</p>
-                          </td>
+                          <td>#125B51SD2</td>
                           <td>24/12/2022</td>
                           <td>Paid</td>
                           <td>Paypal</td>
@@ -854,155 +705,27 @@
                         </tr>
                         <tr>
                           <th scope="row">02</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img2.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Graphics Design Advance Course</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
+                          <td>#125B51SD2</td>
+                          <td>15/12/2022</td>
+                          <td>Pending</td>
                           <td>Paypal</td>
                           <td>$ 508.00</td>
                         </tr>
                         <tr>
                           <th scope="row">03</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img3.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Digital Marketing Course 2022</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
+                          <td>#125B51SD2</td>
+                          <td>15/12/2022</td>
+                          <td>Pending</td>
                           <td>Paypal</td>
-                          <td>$ 425.00</td>
+                          <td>$ 158.00</td>
                         </tr>
                         <tr>
                           <th scope="row">04</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img4.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Learn Linux in 5 Days and Level Up</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
+                          <td>#125B51SD2</td>
+                          <td>15/12/2022</td>
+                          <td>Pending</td>
                           <td>Paypal</td>
-                          <td>$ 312.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">05</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img5.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Web Design for Beginners</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 415.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">06</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img6.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Web Design for Beginners</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 415.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">07</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img7.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Become a UX Designer | Learn the Skills</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 345.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">08</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img8.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Build Responsive Real-World Website</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 648.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">09</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img9.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>The Complete 2023 Web Development</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 299.00</td>
+                          <td>$ 500.00</td>
                         </tr>
                       </tbody>
                     </table>
@@ -1079,8 +802,8 @@
                       <thead>
                         <tr>
                           <th scope="col">No</th>
-                          <th scope="col">Course Title</th>
-                          <th scope="col">Enroll Date</th>
+                          <th scope="col">Transaction ID</th>
+                          <th scope="col">Date</th>
                           <th scope="col">Status</th>
                           <th scope="col">Payment By</th>
                           <th scope="col">Amount</th>
@@ -1089,18 +812,7 @@
                       <tbody>
                         <tr>
                           <th scope="row">01</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img1.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>UI/UX Design Golden Course</p>
-                          </td>
+                          <td>#125B51SD2</td>
                           <td>24/12/2022</td>
                           <td>Paid</td>
                           <td>Paypal</td>
@@ -1108,155 +820,27 @@
                         </tr>
                         <tr>
                           <th scope="row">02</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img2.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Graphics Design Advance Course</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
+                          <td>#125B51SD2</td>
+                          <td>15/12/2022</td>
+                          <td>Pending</td>
                           <td>Paypal</td>
                           <td>$ 508.00</td>
                         </tr>
                         <tr>
                           <th scope="row">03</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img3.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Digital Marketing Course 2022</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
+                          <td>#125B51SD2</td>
+                          <td>15/12/2022</td>
+                          <td>Pending</td>
                           <td>Paypal</td>
-                          <td>$ 425.00</td>
+                          <td>$ 158.00</td>
                         </tr>
                         <tr>
                           <th scope="row">04</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img4.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Learn Linux in 5 Days and Level Up</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
+                          <td>#125B51SD2</td>
+                          <td>15/12/2022</td>
+                          <td>Pending</td>
                           <td>Paypal</td>
-                          <td>$ 312.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">05</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img5.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Web Design for Beginners</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 415.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">06</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img6.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Web Design for Beginners</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 415.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">07</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img7.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Become a UX Designer | Learn the Skills</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 345.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">08</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img8.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Build Responsive Real-World Website</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 648.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">09</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img9.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>The Complete 2023 Web Development</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 299.00</td>
+                          <td>$ 500.00</td>
                         </tr>
                       </tbody>
                     </table>
@@ -2129,6 +1713,155 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- withdraw found modal -->
+    <div
+      class="modal fade"
+      id="withdrawFound"
+      tabindex="-1"
+      aria-labelledby="withdrawFoundLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="withdraw-found">
+              <h5 class="withdraw-found-title">Withdraw Funds</h5>
+              <div class="withdraw-found-body">
+                <h4 class="withdraw-avaiable-balance">Available Balance</h4>
+                <p class="withdraw-price">$50.00 USD</p>
+                <div class="withdraw-payment-method">
+                  <p>Payment Method</p>
+                  <div class="form-floating">
+                    <select
+                      class="form-select"
+                      id="floatingSelect"
+                      aria-label="Floating label select example"
+                    >
+                      <option value="debit-card" selected>Debit Card</option>
+                      <option value="credit-card">Credit Card</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="withdraw-payment-amount">
+                  <p>Amount</p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="noCheck"
+                      checked
+                      onclick="javascript:yesnoCheck();"
+                    />
+                    <label class="form-check-label" for="noCheck">
+                      Amount <span>$50.00</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input other"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="yesCheck"
+                      onclick="javascript:yesnoCheck();"
+                    />
+                    <label class="form-check-label" for="yesCheck">
+                      Other Amount
+                      <span class="minimum-amount"
+                        >(Minimum Amount $30.00)</span
+                      >
+                    </label>
+                  </div>
+                  <div id="ifYes" style="visibility: hidden">
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id=""
+                      placeholder="Enter your amount"
+                    />
+                  </div>
+                </div>
+                <table class="table">
+                  <tr>
+                    <td>
+                      <h5>Platform fee</h5>
+                      <p>(Other Bank Fees May Apply)</p>
+                    </td>
+                    <td>$00.00</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Total Fee</h5>
+                    </td>
+                    <td>$00.00</td>
+                  </tr>
+                </table>
+                <p class="total">
+                  This is a $50.00 payment will be sent to your credit card
+                  account No (**** **** **** **47)
+                </p>
+                <button
+                  type="button"
+                  class="btn withdraw-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#paymentSent"
+                >
+                  Withdraw
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- withdraw found modal -->
+    <div
+      class="modal fade"
+      id="paymentSent"
+      tabindex="-1"
+      aria-labelledby="paymentSentLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="payment-success">
+              <div class="payment-success-img">
+                <img
+                  src="./../assets/images/payment/check.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <h2 class="payment-success-title">Payment Request Been Sent!</h2>
+              <p class="payment-success-process">
+                Your payment has been processed!
+              </p>
+              <ul class="payment-table">
+                <li>
+                  <p>Amount</p>
+                  <p>$500.00</p>
+                </li>
+                <li>
+                  <p>Card Number</p>
+                  <p>**** **** **** **47</p>
+                </li>
+                <li>
+                  <p>Payment Type</p>
+                  <p>Debit Card</p>
+                </li>
+              </ul>
+              <button class="btn" data-bs-dismiss="modal" aria-label="Close">
+                Ok
+              </button>
+            </div>
           </div>
         </div>
       </div>

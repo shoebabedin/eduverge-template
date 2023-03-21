@@ -8,6 +8,8 @@
 @import url("./../css/slick-theme.css");
 /* Theme swiper Css */
 @import url("./swiper-bundle.min.css");
+/* Theme Css chosen */
+@import url("./chosen.css");
 /* Theme Css Hamburger */
 @import url("./hamburger.css");
 /* Theme Css Common */
@@ -64,6 +66,8 @@
 @import url("./removed-account.css");
 /* Theme Css order-history */
 @import url("./order-history.css");
+/* Theme Css instructor-withdraw-earnings */
+@import url("./instructor-withdraw-earnings.css");
 
 /* old css */
 /* Theme Css single-product */

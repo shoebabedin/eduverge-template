@@ -369,3 +369,19 @@ $('.profile-desc').keyup(function() {
   
       
 });
+
+
+
+// radio functional component
+function yesnoCheck() {
+  if (document.getElementById('yesCheck').checked) {
+      document.getElementById('ifYes').style.visibility = 'visible';
+  }
+  else document.getElementById('ifYes').style.visibility = 'hidden';
+
+}
+
+
+
+// multiple item select in div
+

@@ -438,13 +438,10 @@
                         <a class="dropdown-item" href="#">My Courses</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">Order History</a>
+                        <a class="dropdown-item" href="#">Withdraw</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">My Certification</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Logout</a>
+                        <a class="dropdown-item" href="#">Sign Out</a>
                       </li>
                     </ul>
                   </div>
@@ -456,871 +453,213 @@
       </nav>
       <!-- navbar -->
 
-      <section class="course-categories">
+      <!-- instructor course play list -->
+      <div class="instructor-course-play-list">
         <div class="container">
           <div class="row">
-            <div class="col-lg-9">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item">
-                    <a href="#">Home </a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    <a href="#">Order History</a>
-                  </li>
-                </ol>
-              </nav>
-              <h2 class="heading">Order History</h2>
-            </div>
-            <div class="col-lg-3">
-              <img
-                class="img-fluid"
-                src="./../assets/images/course-categories/globe.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- profile setting -->
-      <div class="order-history">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="order-history-header">
-                <h4 class="order-history-title">Order History</h4>
-                <form class="search-form position-relative">
-                  <input
-                    class="form-control"
-                    type="search"
-                    name=""
-                    id=""
-                    placeholder="Search Course"
-                  />
-                  <span class="search">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
+            <div class="col-12">
+              <div class="course-play-list-div">
+                <div class="course-play-list-heading">Created Courses</div>
+                <button class="course-play-list-btn">
+                  <span
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M12.9167 11.6667H12.2583L12.025 11.4417C12.8417 10.4917 13.3333 9.25833 13.3333 7.91667C13.3333 4.925 10.9083 2.5 7.91667 2.5C4.925 2.5 2.5 4.925 2.5 7.91667C2.5 10.9083 4.925 13.3333 7.91667 13.3333C9.25833 13.3333 10.4917 12.8417 11.4417 12.025L11.6667 12.2583V12.9167L15.8333 17.075L17.075 15.8333L12.9167 11.6667ZM7.91667 11.6667C5.84167 11.6667 4.16667 9.99167 4.16667 7.91667C4.16667 5.84167 5.84167 4.16667 7.91667 4.16667C9.99167 4.16667 11.6667 5.84167 11.6667 7.91667C11.6667 9.99167 9.99167 11.6667 7.91667 11.6667Z"
-                        fill="#696F8C"
+                        d="M12.6673 8.66683H8.66732V12.6668H7.33398V8.66683H3.33398V7.3335H7.33398V3.3335H8.66732V7.3335H12.6673V8.66683Z"
+                        fill="white"
                       />
                     </svg>
                   </span>
-                </form>
+                  Add New Course
+                </button>
               </div>
-              <div class="order-history-tabs">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link active"
-                      id="home-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#home-tab-pane"
-                      type="button"
-                      role="tab"
-                      aria-controls="home-tab-pane"
-                      aria-selected="true"
-                    >
-                      All
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="profile-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#profile-tab-pane"
-                      type="button"
-                      role="tab"
-                      aria-controls="profile-tab-pane"
-                      aria-selected="false"
-                    >
-                      Paid
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="contact-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#contact-tab-pane"
-                      type="button"
-                      role="tab"
-                      aria-controls="contact-tab-pane"
-                      aria-selected="false"
-                    >
-                      Refund
-                    </button>
-                  </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                  <div
-                    class="tab-pane fade show active"
-                    id="home-tab-pane"
-                    role="tabpanel"
-                    aria-labelledby="home-tab"
-                    tabindex="0"
-                  >
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col">No</th>
-                          <th scope="col">Course Title</th>
-                          <th scope="col">Enroll Date</th>
-                          <th scope="col">Status</th>
-                          <th scope="col">Payment By</th>
-                          <th scope="col">Amount</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">01</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img1.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>UI/UX Design Golden Course</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 648.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">02</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img2.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Graphics Design Advance Course</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 508.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">03</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img3.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Digital Marketing Course 2022</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 425.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">04</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img4.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Learn Linux in 5 Days and Level Up</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 312.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">05</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img5.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Web Design for Beginners</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 415.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">06</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img6.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Web Design for Beginners</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 415.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">07</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img7.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Become a UX Designer | Learn the Skills</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 345.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">08</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img8.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Build Responsive Real-World Website</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 648.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">09</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img9.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>The Complete 2023 Web Development</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 299.00</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <nav aria-label="Page navigation example">
-                      <ul class="pagination justify-content-end">
-                        <li class="page-item disabled">
-                          <a class="page-link">
-                            <svg
-                              width="6"
-                              height="10"
-                              viewBox="0 0 6 10"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M2.41 5L5.7 1.71C5.89 1.53 6 1.28 6 1C6 0.45 5.55 0 5 0C4.72 0 4.47 0.11 4.29 0.29L0.29 4.29C0.11 4.47 0 4.72 0 5C0 5.28 0.11 5.53 0.29 5.71L4.29 9.71C4.47 9.89 4.72 10 5 10C5.55 10 6 9.55 6 9C6 8.72 5.89 8.47 5.71 8.29L2.41 5Z"
-                                fill="#D8DAE5"
-                              />
-                            </svg>
-                          </a>
-                        </li>
-                        <li class="page-item active">
-                          <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">4</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">5</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">...</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">28</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">
-                            <svg
-                              width="6"
-                              height="10"
-                              viewBox="0 0 6 10"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M5.71 4.29L1.71 0.29C1.53 0.11 1.28 0 1 0C0.45 0 0 0.45 0 1C0 1.28 0.11 1.53 0.29 1.71L3.59 5L0.3 8.29C0.11 8.47 0 8.72 0 9C0 9.55 0.45 10 1 10C1.28 10 1.53 9.89 1.71 9.71L5.71 5.71C5.89 5.53 6 5.28 6 5C6 4.72 5.89 4.47 5.71 4.29Z"
-                                fill="#696F8C"
-                              />
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
+              <hr />
+            </div>
+            <div class="col-12">
+              <div class="course-play-list">
+                <div class="course-play-list-item">
+                  <div class="course-play-img">
+                    <img
+                      src="./../assets/images/my-courses/img1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM16 29V11L28 20L16 29Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="profile-tab-pane"
-                    role="tabpanel"
-                    aria-labelledby="profile-tab"
-                    tabindex="0"
-                  >
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col">No</th>
-                          <th scope="col">Course Title</th>
-                          <th scope="col">Enroll Date</th>
-                          <th scope="col">Status</th>
-                          <th scope="col">Payment By</th>
-                          <th scope="col">Amount</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">01</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img1.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>UI/UX Design Golden Course</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 648.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">02</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img2.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Graphics Design Advance Course</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 508.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">03</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img3.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Digital Marketing Course 2022</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 425.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">04</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img4.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Learn Linux in 5 Days and Level Up</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 312.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">05</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img5.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Web Design for Beginners</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 415.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">06</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img6.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Web Design for Beginners</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 415.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">07</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img7.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Become a UX Designer | Learn the Skills</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 345.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">08</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img8.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Build Responsive Real-World Website</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 648.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">09</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img9.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>The Complete 2023 Web Development</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 299.00</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <nav aria-label="Page navigation example">
-                      <ul class="pagination justify-content-end">
-                        <li class="page-item disabled">
-                          <a class="page-link">
-                            <svg
-                              width="6"
-                              height="10"
-                              viewBox="0 0 6 10"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M2.41 5L5.7 1.71C5.89 1.53 6 1.28 6 1C6 0.45 5.55 0 5 0C4.72 0 4.47 0.11 4.29 0.29L0.29 4.29C0.11 4.47 0 4.72 0 5C0 5.28 0.11 5.53 0.29 5.71L4.29 9.71C4.47 9.89 4.72 10 5 10C5.55 10 6 9.55 6 9C6 8.72 5.89 8.47 5.71 8.29L2.41 5Z"
-                                fill="#D8DAE5"
-                              />
-                            </svg>
-                          </a>
-                        </li>
-                        <li class="page-item active">
-                          <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">4</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">5</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">...</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">28</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">
-                            <svg
-                              width="6"
-                              height="10"
-                              viewBox="0 0 6 10"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M5.71 4.29L1.71 0.29C1.53 0.11 1.28 0 1 0C0.45 0 0 0.45 0 1C0 1.28 0.11 1.53 0.29 1.71L3.59 5L0.3 8.29C0.11 8.47 0 8.72 0 9C0 9.55 0.45 10 1 10C1.28 10 1.53 9.89 1.71 9.71L5.71 5.71C5.89 5.53 6 5.28 6 5C6 4.72 5.89 4.47 5.71 4.29Z"
-                                fill="#696F8C"
-                              />
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
+                  <div class="course-play-details-btn">
+                    <div class="course-play-details">
+                      <h4 class="title">UI/UX Design Golden Course</h4>
+                      <p class="lesson">4 Section | 15 Lesson</p>
+                      <p class="duration">Duration: 2:20:36 | Enroll: 56</p>
+                    </div>
+                    <div class="course-play-btn">
+                      <a class="btn" href="#"
+                        ><svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z"
+                            fill="#474D66"
+                          />
+                        </svg>
+                      </a>
+                      <button class="btn">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16 9V19H8V9H16ZM14.5 3H9.5L8.5 4H5V6H19V4H15.5L14.5 3ZM18 7H6V19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7Z"
+                            fill="#D14343"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="contact-tab-pane"
-                    role="tabpanel"
-                    aria-labelledby="contact-tab"
-                    tabindex="0"
-                  >
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col">No</th>
-                          <th scope="col">Course Title</th>
-                          <th scope="col">Enroll Date</th>
-                          <th scope="col">Status</th>
-                          <th scope="col">Payment By</th>
-                          <th scope="col">Amount</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">01</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img1.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>UI/UX Design Golden Course</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 648.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">02</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img2.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Graphics Design Advance Course</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 508.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">03</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img3.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Digital Marketing Course 2022</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 425.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">04</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img4.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Learn Linux in 5 Days and Level Up</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 312.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">05</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img5.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Web Design for Beginners</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 415.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">06</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img6.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Web Design for Beginners</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 415.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">07</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img7.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Become a UX Designer | Learn the Skills</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 345.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">08</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img8.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>Build Responsive Real-World Website</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 648.00</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">09</th>
-                          <td
-                            class="d-flex align-items-center justify-content-start"
-                          >
-                            <div class="data-img">
-                              <img
-                                class="img-fluid"
-                                src="./../assets/images/order-history/img9.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>The Complete 2023 Web Development</p>
-                          </td>
-                          <td>24/12/2022</td>
-                          <td>Paid</td>
-                          <td>Paypal</td>
-                          <td>$ 299.00</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <nav aria-label="Page navigation example">
-                      <ul class="pagination justify-content-end">
-                        <li class="page-item disabled">
-                          <a class="page-link">
-                            <svg
-                              width="6"
-                              height="10"
-                              viewBox="0 0 6 10"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M2.41 5L5.7 1.71C5.89 1.53 6 1.28 6 1C6 0.45 5.55 0 5 0C4.72 0 4.47 0.11 4.29 0.29L0.29 4.29C0.11 4.47 0 4.72 0 5C0 5.28 0.11 5.53 0.29 5.71L4.29 9.71C4.47 9.89 4.72 10 5 10C5.55 10 6 9.55 6 9C6 8.72 5.89 8.47 5.71 8.29L2.41 5Z"
-                                fill="#D8DAE5"
-                              />
-                            </svg>
-                          </a>
-                        </li>
-                        <li class="page-item active">
-                          <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">4</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">5</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">...</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">28</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">
-                            <svg
-                              width="6"
-                              height="10"
-                              viewBox="0 0 6 10"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M5.71 4.29L1.71 0.29C1.53 0.11 1.28 0 1 0C0.45 0 0 0.45 0 1C0 1.28 0.11 1.53 0.29 1.71L3.59 5L0.3 8.29C0.11 8.47 0 8.72 0 9C0 9.55 0.45 10 1 10C1.28 10 1.53 9.89 1.71 9.71L5.71 5.71C5.89 5.53 6 5.28 6 5C6 4.72 5.89 4.47 5.71 4.29Z"
-                                fill="#696F8C"
-                              />
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
+                </div>
+                <div class="course-play-list-item">
+                  <div class="course-play-img">
+                    <img
+                      src="./../assets/images/my-courses/img2.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM16 29V11L28 20L16 29Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="course-play-details-btn">
+                    <div class="course-play-details">
+                      <h4 class="title">The Web Developer Bootcamp</h4>
+                      <p class="lesson">4 Section | 15 Lesson</p>
+                      <p class="duration">Duration: 2:20:36 | Enroll: 56</p>
+                    </div>
+                    <div class="course-play-btn">
+                      <a class="btn" href="#"
+                        ><svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z"
+                            fill="#474D66"
+                          />
+                        </svg>
+                      </a>
+                      <button class="btn">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16 9V19H8V9H16ZM14.5 3H9.5L8.5 4H5V6H19V4H15.5L14.5 3ZM18 7H6V19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7Z"
+                            fill="#D14343"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="course-play-list-item">
+                  <div class="course-play-img">
+                    <img
+                      src="./../assets/images/my-courses/img2.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM16 29V11L28 20L16 29Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="course-play-details-btn">
+                    <div class="course-play-details">
+                      <h4 class="title">Digital Marketing For Beginners</h4>
+                      <p class="lesson">4 Section | 15 Lesson</p>
+                      <p class="duration">Duration: 2:20:36 | Enroll: 56</p>
+                    </div>
+                    <div class="course-play-btn">
+                      <a class="btn" href="#"
+                        ><svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z"
+                            fill="#474D66"
+                          />
+                        </svg>
+                      </a>
+                      <button class="btn">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16 9V19H8V9H16ZM14.5 3H9.5L8.5 4H5V6H19V4H15.5L14.5 3ZM18 7H6V19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7Z"
+                            fill="#D14343"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1328,7 +667,168 @@
           </div>
         </div>
       </div>
-      <!-- profile setting -->
+      <!-- instructor course play list -->
+
+      <!-- Checkout List -->
+      <div class="checkout_process_modal my-purchase-course-modal">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="checkout-list">My Purchase Course</h2>
+                <hr />
+              </div>
+              <div class="col-lg-12">
+                <div class="cart-item">
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="cart-item-left">
+                        <div class="cart-item-img">
+                          <img
+                            src="./../assets/images/my-courses/img3.png"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="cart-item-desc">
+                          <h4>UI/UX Design Golden Course</h4>
+                          <p>
+                            A website is much more than a group of pages
+                            connected by links. It’s an interface, space where
+                            different things meet, communicate, and affect each
+                            other.
+                          </p>
+                          <h5>Learning Progress (Completed)</h5>
+                          <div class="course-progress-bar">
+                            <div
+                              class="progress"
+                              role="progressbar"
+                              aria-label="Success example"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              <div
+                                class="progress-bar bg-success"
+                                style="width: 100%"
+                              ></div>
+                            </div>
+                            <p>100%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="cart-item-right">
+                        <a class="btn bg-success text-white go-course" href="#"
+                          >Go to Course <i class="ph ph-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item">
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="cart-item-left">
+                        <div class="cart-item-img">
+                          <img
+                            src="./../assets/images/my-courses/img4.png"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="cart-item-desc">
+                          <h4>T-Shirt Design- Freelancing Course</h4>
+                          <p>
+                            A website is much more than a group of pages
+                            connected by links. It’s an interface, space where
+                            different things meet, communicate, and affect each
+                            other.
+                          </p>
+                          <h5>Learning Progress</h5>
+                          <div class="course-progress-bar">
+                            <div
+                              class="progress"
+                              role="progressbar"
+                              aria-label="Success example"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              <div
+                                class="progress-bar bg-success"
+                                style="width: 30%"
+                              ></div>
+                            </div>
+                            <p>30%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="cart-item-right">
+                        <a class="btn bg-success text-white go-course" href="#"
+                          >Go to Course <i class="ph ph-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item">
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="cart-item-left">
+                        <div class="cart-item-img">
+                          <img
+                            src="./../assets/images/my-courses/img5.png"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="cart-item-desc">
+                          <h4>Big Data Analysis- Full Course 2023</h4>
+                          <p>
+                            A website is much more than a group of pages
+                            connected by links. It’s an interface, space where
+                            different things meet, communicate, and affect each
+                            other.
+                          </p>
+                          <h5>Progress</h5>
+                          <div class="course-progress-bar">
+                            <div
+                              class="progress"
+                              role="progressbar"
+                              aria-label="Success example"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              <div
+                                class="progress-bar bg-success"
+                                style="width: 30%"
+                              ></div>
+                            </div>
+                            <p>30%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="cart-item-right">
+                        <a class="btn bg-success text-white go-course" href="#"
+                          >Go to Course <i class="ph ph-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Checkout List -->
 
       <!-- footer -->
       <div class="footer" id="footer">
@@ -2157,55 +1657,5 @@
       src="./../assets/js/swiper-bundle.min.js"
     ></script>
     <script type="text/javascript" src="./../assets/js/main.js"></script>
-
-    <script>
-      var myInput = document.getElementById("psw");
-      var letter = document.getElementById("letter");
-      var capital = document.getElementById("capital");
-      var number = document.getElementById("number");
-      var length = document.getElementById("length");
-
-      // When the user starts to type something inside the password field
-      myInput.onkeyup = function () {
-        // Validate lowercase letters
-        var lowerCaseLetters = /[a-z]/g;
-        if (myInput.value.match(lowerCaseLetters)) {
-          letter.classList.remove("invalid");
-          letter.classList.add("valid");
-        } else {
-          letter.classList.remove("valid");
-          letter.classList.add("invalid");
-        }
-
-        // Validate capital letters
-        var upperCaseLetters = /[A-Z]/g;
-        if (myInput.value.match(upperCaseLetters)) {
-          capital.classList.remove("invalid");
-          capital.classList.add("valid");
-        } else {
-          capital.classList.remove("valid");
-          capital.classList.add("invalid");
-        }
-
-        // Validate numbers
-        var numbers = /[0-9]/g;
-        if (myInput.value.match(numbers)) {
-          number.classList.remove("invalid");
-          number.classList.add("valid");
-        } else {
-          number.classList.remove("valid");
-          number.classList.add("invalid");
-        }
-
-        // Validate length
-        if (myInput.value.length >= 8) {
-          length.classList.remove("invalid");
-          length.classList.add("valid");
-        } else {
-          length.classList.remove("valid");
-          length.classList.add("invalid");
-        }
-      };
-    </script>
   </body>
 </html>
