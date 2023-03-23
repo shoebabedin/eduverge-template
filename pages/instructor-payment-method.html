@@ -630,9 +630,15 @@
               <div class="payment-method">
                 <div class="payment-method-header">
                   <h4>Payment Method</h4>
-                  <button class="btn add-card">Add Card</button>
+                  <button
+                    class="btn add-card"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addCard"
+                  >
+                    Add Card
+                  </button>
                 </div>
-                <hr>
+                <hr />
                 <div class="payment-method-items">
                   <div class="card-icon-number">
                     <div class="card-icon">
@@ -661,7 +667,6 @@
 
                   <button class="btn">Remove</button>
                 </div>
-               
               </div>
             </div>
           </div>
@@ -1468,6 +1473,85 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- add card -->
+    <div
+      class="modal fade"
+      id="addCard"
+      tabindex="-1"
+      aria-labelledby="addCardLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Add New Card
+            </h1>
+            <!-- <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button> -->
+          </div>
+          <div class="modal-body">
+            <form action="" class="row">
+              <div class="col-12 mb-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Card Holder Name"
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Card Number"
+                />
+              </div>
+              <div class="col-lg-6 mb-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="MM/YY"
+                />
+              </div>
+              <div class="col-lg-6 mb-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="CVV"
+                />
+              </div>
+              <div class="col-12">
+                <div class="submit-btn">
+                  <button
+                    type="button"
+                    class="btn cancel"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                  <button type="button" class="btn add-card-btn">
+                    Add Card
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

@@ -33,3 +33,99 @@
   letter-spacing: 0.5px;
   color: #ffffff;
 }
+
+/* remove User modal */
+#removeUser .modal-body h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #101840;
+}
+#removeUser .modal-body p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #696f8c;
+}
+#removeUser .modal-body .form-control {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #474d66;
+  padding: 16px 16px;
+}
+#removeUser .modal-body .submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+#removeUser .modal-body .submit-btn .btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+}
+#removeUser .modal-body .submit-btn .btn.cancel {
+  color: #474d66;
+}
+#removeUser .modal-body .submit-btn .btn.remove-user-btn {
+  background: #d14343 !important;
+  color: #ffffff;
+}
+#removeUser .modal-body .submit-btn .btn {
+}
+#removeUser .modal-body {
+}
+#removeUser .modal-body {
+}
+#removeUser .modal-body {
+}
+#removeUser .modal-body {
+}
+#removeUser .modal-body {
+}
+#removeUser .modal-body {
+}
+#removeUser .modal-body {
+}
+#removeUser .modal-body {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+#removeUser {
+}
+/* remove User modal */
