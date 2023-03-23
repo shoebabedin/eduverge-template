@@ -533,7 +533,7 @@
               </nav>
             </div>
             <div class="col-lg-12">
-              <form class="course-video-upload text-center demo-upload">
+              <div class="course-video-upload text-center">
                 <input class="file-upload" type="file" name="" id="" />
                 <div class="course-video-upload-img">
                   <img
@@ -564,23 +564,80 @@
                   </span>
                   Upload your file (mp4 Or mpeg)
                 </div>
-              </form>
-            </div>
-            <div class="col-lg-12">
-              <div id="preview-template" style="display: none">
-                <div class="dz-preview dz-file-preview">
-                  <div class="dz-image"><img data-dz-thumbnail="" /></div>
-                  <div class="dz-details">
-                    <div class="dz-filename">
-                      <span class="uploading">Uploading - </span
-                      ><span data-dz-name=""></span>
+              </div>
+
+              <!-- after-upload -->
+              <div class="after-upload">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="upload-img-progressbar">
+                      <div class="after-upload-image">
+                        <img
+                          class="img-fluid"
+                          src="./../assets/images/course-upload/after-upload.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="after-upload-progressbar">
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Example with label"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 70%">
+                            Uploading your file (70%)
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="dz-progress">
-                    <span class="dz-upload" data-dz-uploadprogress=""></span>
-                  </div>
-                  <div class="dz-error-message">
-                    <span data-dz-errormessage=""></span>
+                  <div class="col-lg-8">
+                    <form action="" class="row">
+                      <div class="col-12 mb-3">
+                        <label for="" class="form-label">Lesson Title</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          name=""
+                          id=""
+                          value="Introduction to UI/UX Design Part-1.Mp4"
+                        />
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label for="" class="form-label"
+                          >Course Description</label
+                        >
+                        <textarea class="form-control" name="" id="" rows="5">Currently, the UI/UX design has emerged as one of the most promising careers. Whether you’re working with a designer on a website or app or doing the design yourself, this UX Guideline will help you deliver a tool that users love to use. 
+                       </textarea
+                        >
+                        <p class="text-counting text-end">0/500</p>
+                      </div>
+                      <div class="col-12 mb-3">
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexSwitchCheckChecked"
+                            >Lesson Privacy</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="submit-btn">
+                          <div class="btn remove">Remove</div>
+                          <div class="btn save">Save</div>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>

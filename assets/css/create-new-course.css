@@ -414,39 +414,142 @@
   letter-spacing: 0.5px;
   color: #ffffff;
 }
-.create-new-course .course-video-upload {
+/* after-upload */
+.create-new-course .after-upload .upload-img-progressbar {
+  border-radius: 4px;
+  overflow: hidden;
 }
-.create-new-course .course-video-upload {
+.create-new-course
+  .after-upload
+  .upload-img-progressbar
+  .after-upload-image
+  img {
+  width: 100%;
+  height: 100%;
 }
-.create-new-course .course-video-upload {
+.create-new-course
+  .after-upload
+  .upload-img-progressbar
+  .after-upload-progressbar
+  .progress {
+  --bs-progress-bg: #dcf2ea;
+  --bs-progress-border-radius: 0px;
+  height: 56px;
 }
-.create-new-course .course-video-upload {
+.create-new-course
+  .after-upload
+  .upload-img-progressbar
+  .after-upload-progressbar
+  .progress
+  .progress-bar {
+  background-color: #429777;
+  font-weight: 600;
+  font-size: 19.2688px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
 }
-.create-new-course .course-video-upload {
+.create-new-course .after-upload form .form-label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #101840;
 }
-.create-new-course .course-video-upload {
+.create-new-course .after-upload form .form-control {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #474d66;
+  padding: 16px;
+  text-align: left;
 }
-.create-new-course .course-video-upload {
+.create-new-course .after-upload form .text-counting {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.5px;
+  color: #474d66;
+  margin-top: 8px;
 }
-.create-new-course .course-video-upload {
+.create-new-course .after-upload form .form-check-input:checked {
+  background-color: #52bd94;
+  border-color: #52bd94;
 }
-.create-new-course .course-video-upload {
+.create-new-course .after-upload form .form-switch .form-check-label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #474d66;
 }
-.create-new-course .course-video-upload {
+.create-new-course .after-upload form .form-switch {
+  margin-bottom: 48px;
 }
-.create-new-course .course-video-upload {
+.create-new-course .after-upload form .submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
 }
-.create-new-course .course-video-upload {
+.create-new-course .after-upload form .btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
 }
-.create-new-course .course-video-upload {
+.create-new-course .after-upload form .btn.remove {
+  background: #d14343 !important;
+  color: #ffffff;
 }
-.create-new-course .course-video-upload {
+.create-new-course .after-upload form .btn.save {
+  background: #52bd94 !important;
+  color: #ffffff;
 }
-.create-new-course .course-video-upload {
+.create-new-course .after-upload form {
+}
+.create-new-course .after-upload form {
+}
+.create-new-course .after-upload form {
+}
+.create-new-course .after-upload form {
+}
+.create-new-course .after-upload form {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
+}
+.create-new-course .after-upload {
 }
 
 /* upload-finish */
-.create-new-course .upload-finish{
+.create-new-course .upload-finish {
   max-width: 617px;
   margin: 90px auto;
 }
