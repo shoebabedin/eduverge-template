@@ -186,9 +186,9 @@
 
 /* responsive */
 @media (min-width: 1024px) and (max-width: 1400px) {
-  .popular_courses {
+  /* .popular_courses {
     padding-top: 0;
-  }
+  } */
   .popular_courses .mix .desc {
     padding: 0;
   }

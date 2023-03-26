@@ -108,10 +108,10 @@
       <!-- navbar -->
       <nav id="top_navbar" class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./../index.html">
+          <a class="navbar-brand" href="./index.html">
             <img
               class="img-fluid"
-              src="./../assets/images/logo/logo.png"
+              src="./assets/images/logo/logo.png"
               alt="Eduverge"
             />
           </a>
@@ -134,7 +134,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./../index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
               </li>
               <!-- desktop nav dropdown -->
               <li class="nav-item dropdown desktop">
@@ -283,7 +283,8 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link">Become an Instructor</a>
+                <a class="nav-link"  data-bs-toggle="modal"
+                data-bs-target="#register">Become an Instructor</a>
               </li>
             </ul>
 
@@ -310,50 +311,100 @@
               />
             </form>
 
-            <div class="cart">
+            <div class="cart dropdown position-relative">
               <a href="!#" class="mobile nav-link text-center">Cart (0)</a>
-              <svg
-                class="desktop"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.25 17.25H6.54375L3.92813 2.86875C3.89752 2.69653 3.80768 2.54042 3.67415 2.42743C3.54062 2.31444 3.37179 2.25168 3.19687 2.25H1.5"
-                  stroke="#101840"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M7.5 21C8.53553 21 9.375 20.1605 9.375 19.125C9.375 18.0895 8.53553 17.25 7.5 17.25C6.46447 17.25 5.625 18.0895 5.625 19.125C5.625 20.1605 6.46447 21 7.5 21Z"
-                  stroke="#101840"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17.25 21C18.2855 21 19.125 20.1605 19.125 19.125C19.125 18.0895 18.2855 17.25 17.25 17.25C16.2145 17.25 15.375 18.0895 15.375 19.125C15.375 20.1605 16.2145 21 17.25 21Z"
-                  stroke="#101840"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M5.85938 13.5H17.6344C17.985 13.5011 18.3247 13.3785 18.5939 13.1539C18.8631 12.9293 19.0445 12.617 19.1063 12.2719L20.25 6H4.5"
-                  stroke="#101840"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+              <span class="nav-link dropdown-toggle cart-dropdown"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+                <svg
+                  class="desktop"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.25 17.25H6.54375L3.92813 2.86875C3.89752 2.69653 3.80768 2.54042 3.67415 2.42743C3.54062 2.31444 3.37179 2.25168 3.19687 2.25H1.5"
+                    stroke="#101840"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.5 21C8.53553 21 9.375 20.1605 9.375 19.125C9.375 18.0895 8.53553 17.25 7.5 17.25C6.46447 17.25 5.625 18.0895 5.625 19.125C5.625 20.1605 6.46447 21 7.5 21Z"
+                    stroke="#101840"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.25 21C18.2855 21 19.125 20.1605 19.125 19.125C19.125 18.0895 18.2855 17.25 17.25 17.25C16.2145 17.25 15.375 18.0895 15.375 19.125C15.375 20.1605 16.2145 21 17.25 21Z"
+                    stroke="#101840"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5.85938 13.5H17.6344C17.985 13.5011 18.3247 13.3785 18.5939 13.1539C18.8631 12.9293 19.0445 12.617 19.1063 12.2719L20.25 6H4.5"
+                    stroke="#101840"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                2
+                <span class="visually-hidden">unread messages</span>
+              </span>
+              <div class="dropdown-menu cart-item-dropdown">
+                <div class="cart-item">
+                  <div class="row">
+                    <div class="col-2">
+                      <img class="img-fluid" src="./../assets/images/check-list/img-slide1.png" alt="">
+                    </div>
+                    <div class="col-10">
+                      <h2>Angular.JS Road to Mastery (2022 Edition)</h2>
+                      <div class="des-price d-flex align-items-center justify-content-between">
+                        <p class="desc">This tutorial will help for...</p>
+                        <p class="price">$ 199.00</p>
+                      </div>
+
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-2">
+                      <img class="img-fluid" src="./../assets/images/check-list/img-slide1.png" alt="">
+                    </div>
+                    <div class="col-10">
+                      <h2>Angular.JS Road to Mastery (2022 Edition)</h2>
+                      <div class="des-price d-flex align-items-center justify-content-between">
+                        <p class="desc">This tutorial will help for...</p>
+                        <p class="price">$ 199.00</p>
+                      </div>
+
+                    </div>
+                  </div>
+                  <hr>
+
+                  <div class="total-btn">
+                    <div class="total">
+                      <p class="total-title">Total :</p>
+                      <p class="total-price">$ 470.00</p>
+                    </div>
+                    <a href="./checkout.html" class="btn">Checkout</button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="auth-btn">
               <a
                 href="#"
-                class="btn bg-success text-white me-3 ms-3"
+                class="btn bg-success text-white ms-3"
                 data-bs-toggle="modal"
                 data-bs-target="#login"
                 >Login</a
